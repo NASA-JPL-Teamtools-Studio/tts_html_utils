@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" style="height: 97%">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="google" content="notranslate" />
+    <style>
+        {% for style in styles %}
+            {{ style }}
+        {% endfor %}
+    </style>
+
+    {% for script in head_scripts %}
+        {{ script }}
+    {% endfor %}
+
+    <title>{{ title }}</title>
+
+</head>
+<body style="height: 100%" onresize="recalculateBodyHeight()">
+    <div id="header-div">
+        <div class="page-header">
+            <div class="back-button">
+                {% if group %}
+                <a href="#" onclick="open_report(null)">&#8249; Back to group</a>
+                {% endif %}
+            </div>
+            <div class="title-block">
+                <h1 class="report-title">{{ title }}</h1>
+                <h3 class="report-sub-title">{{ subtitle }}</h3>
+            </div>
+        </div>
+        <div class="tab">
+            {% for section in sections %}
+            <button id="{{ section.id }}TabButton" class="tab-link" onclick="openTab(event, '{{ section.id }}Tab')">{{ section.name }}</button>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="body-div">
+        {% for section in sections %}
+        <div id="{{ section.id }}Tab" class="tab-content">
+            <h2 id="{{section.id}}-section-header" class="section-header">{{ section.name }}</h2>
+            <div class="section-content" id="section_{{ section.id }}">
+                {{ section.rendered }}
+                <br /><br />
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% for script in body_scripts %}
+        {{ script }}
+    {% endfor %}
+
+</body>
+</html>

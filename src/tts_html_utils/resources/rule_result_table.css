@@ -1,0 +1,40 @@
+table.power-table {
+    width: 100%;
+}
+
+table.power-table th {
+    text-align: center;
+}
+
+table.power-table div.dispos hr {
+    margin: 0;
+}
+
+table.power-table td {
+    white-space: unset;
+}
+
+table.power-table tr.power-table-hidden > td {
+    width: 0;
+    white-space: normal;
+    background-color: var(--accent-primary);
+    padding: 10px
+}
+
+table.power-table tr.power-table-hidden > td > span {
+    width: 100%;
+    display: block;
+}
+
+table.power-table tr.power-table-hidden > td > div.dispos {
+    padding: 5px 10px 10px 10px;
+    background-color: white;
+}
+
+table.power-table tr.power-table-hidden > td > div.dispos:first-child {
+    margin-bottom: 5px;
+}
+
+table.power-table tr.power-table-hidden > td > div.dispos > div {
+    padding: 5px;
+}

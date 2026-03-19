@@ -1,0 +1,31 @@
+{% macro component_id(component) -%}
+    {% if component.id %}id="{{ component.id }}"{% endif %}
+{%- endmacro %}
+
+{% macro component_class(component) -%}
+    {% if component.class_name %}class="{{ component.class_name }}"{% endif %}
+{%- endmacro %}
+
+{% macro component_style(component) -%}
+    {% if component.style %}style="{% for key, value in component.style.items() %}{{ key|e }}: {{ value|e }}; {% endfor %}"{% endif %}
+{%- endmacro %}
+
+{% macro component_attr(component) -%}
+    {% if component.attr %}{% for key, value in component.attr.items() %}{{ key|e }}="{{ value|e }}" {% endfor %}{% endif %}
+{%- endmacro %}
+
+{% macro component_inner(component) -%}
+    {{ component_id(component) }} {{ component_class(component) }} {{ component_style(component) }} {{ component_attr(component) }}
+{%- endmacro %}
+
+{% macro component_full(component) -%}
+    {{ component_open(component) | safe }}{{ component.content | safe }}{{ component_close(component) | safe }}
+{%- endmacro %}
+
+{% macro component_open(component) -%}
+    <{{ component.tag | safe }} {{ component_inner(component) | safe }}>
+{%- endmacro %}
+
+{% macro component_close(component) -%}
+    </{{ component.tag | safe }}>
+{%- endmacro %}

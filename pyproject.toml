@@ -1,0 +1,53 @@
+[project]
+name = "tts-html-utils"
+description = "Utilities for simplifying HTML generation."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "Unlicense"}
+authors = [
+  { name = "muszynsk", email = "matt.muszynski@jpl.nasa.gov" },
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Unlicense",
+]
+dependencies = [
+  "beautifulsoup4",
+  "datetime",
+  "django",
+  "jinja2",
+  "numpy",
+  "pandas",
+  "plotly",
+  "pytest",
+  "tts-utilities>=0.2.1,<1.0.0",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/NASA-JPL-Teamtools-Studio/html_utils"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"html_utils" = ["html_utils/django/templates/*", "html_utils/resources/*"]
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
+
+[build-system]
+requires = [
+    "setuptools", 
+    "setuptools_scm",
+    "toml", 
+    "wheel", 
+    "tts-utilities~=0.2.1"
+    ]
+build-backend = "setuptools.build_meta"
+

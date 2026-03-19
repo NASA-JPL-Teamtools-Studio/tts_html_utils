@@ -1,0 +1,21 @@
+{% import 'helpers.html' as helpers %}
+<table {{ helpers.component_inner(table) }}>
+{{ helpers.component_full(table.superheader)|safe if table.superheader }}
+{% if table.header %}
+    <thead {{ helpers.component_inner(table.header) }}>
+        <tr class="header">
+        {% for cell in table.header.cells %}
+            <th {% if cell.max_width %}style="width:{{ cell.max_width }}px;"{% endif %} class="{{ 'sticky_column elevated' if (loop.index - 1) in table.sticky_column_numbers}}">{{ cell.content | safe }}</th>
+        {% endfor %}
+        </tr>
+    </thead>
+{% endif %}
+    <tbody id="record-list">
+    {% for row in table.children %}
+        {{ row.rendered | safe }}
+    {% endfor %}
+    </tbody>
+</table>
+
+<div id="pagination">
+</div>

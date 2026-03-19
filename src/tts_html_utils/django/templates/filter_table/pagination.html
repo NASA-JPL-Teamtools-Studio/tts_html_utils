@@ -1,0 +1,18 @@
+<!-- pagination.html -->
+<div class="pagination">
+  <span class="step-links">
+    {% if page_obj.number > 1 %}
+      <a href="{{ base_url_path }}?{{ get_vars }}&page=1" class="first">First</a>
+      <a href="{{ base_url_path }}?{{ get_vars }}&page={{ page_obj.number|add:-1 }}" class="previous">Previous</a>
+    {% endif %}
+
+    <span class="current">
+      Page {{ page_obj.number }} of {{ paginator.num_pages }}.
+    </span>
+
+    {% if page_obj.number < paginator.num_pages %}
+      <a href="{{ base_url_path }}?{{ get_vars }}&page={{ page_obj.number|add:1 }}" class="next">Next</a>
+      <a href="{{ base_url_path }}?{{ get_vars }}&page={{ paginator.num_pages }}" class="last">Last</a>
+    {% endif %}
+  </span>
+</div>

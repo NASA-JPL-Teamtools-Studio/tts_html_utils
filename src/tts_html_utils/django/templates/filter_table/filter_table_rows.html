@@ -1,0 +1,22 @@
+  {% for row in rows %}
+    <tr class='primary-row' >
+      {% if 'subrow' in row.keys %}
+      <td id='toggle-{{ row.uuid }}'>toggle</td>
+      {% endif %}
+      {% for key, value in row.items %}
+        {% if key != 'subrow' and key != 'uuid' %}
+          <td>{{ value }}</td>
+        {% endif %}
+      {% endfor %}
+
+    </tr>
+    {% if 'subrow' in row.keys %}
+    <tr class='subrow' id='subrow-{{ row.uuid }}' style='display:none'>
+      <td colspan='{{ row.items|length|add:-1 }}'>{{ row.subrow|safe }}</td>
+    </tr>
+    {% endif %}
+  {% empty %}
+    <tr>
+      <td colspan="3">No records found.</td>
+    </tr>
+  {% endfor %}

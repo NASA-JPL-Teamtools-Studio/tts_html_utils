@@ -1,0 +1,108 @@
+<script>
+  //TO DO: Update this so date selectors and filter form stuff
+  //are separable (e.g. include one without the other if desired)
+
+  document.addEventListener('DOMContentLoaded', function () {
+      let debounceTimer;
+
+      // Get all filter input elements, including date filters from the first form
+      const filters = document.querySelectorAll('.filter-input, #filter-form input');
+
+      filters.forEach(filter => {
+          // Add event listener for both 'keyup' (for text inputs) and 'change' (for date inputs)
+          if (filter.type === 'date') {
+              filter.addEventListener('change', function () { // 'change' event for date filter
+                  updateList();
+              });
+          } else {
+              filter.addEventListener('keyup', function () { // 'keyup' event for other filters
+                  clearTimeout(debounceTimer);
+                  debounceTimer = setTimeout(() => {
+                      updateList();
+                  }, 50);  // 100ms delay after the user stops typing
+              });
+          }
+      });
+
+      function updateList() {
+          const form = document.getElementById('search-form');
+          const formData = new FormData(form);
+
+          {% if include_calendar %}
+          // Get the values of the date filters from the filter form
+          const startDate = document.querySelector('#filter-form #id_start_date') ? document.querySelector('#filter-form #id_start_date').value : '';
+          const endDate = document.querySelector('#filter-form #id_end_date') ? document.querySelector('#filter-form #id_end_date').value : '';
+          {% endif %}
+
+          // Get the current page from the URL for pagination
+          const page = new URLSearchParams(window.location.search).get('page') || 1;
+
+          // Collect all filter values from the search form and date filters
+          const filterParams = {};
+
+          document.querySelectorAll('.filter-input').forEach(input => {
+              if (input.value) {
+                  filterParams[input.dataset.column] = input.value; // Add filter by column
+              }
+          });
+
+          // Add date filters to filterParams
+          {% if include_calendar %}
+          if (startDate) filterParams['start_date'] = startDate;
+          if (endDate) filterParams['end_date'] = endDate;
+          {% endif %}
+          // Add pagination to the params
+          filterParams.page = page;
+
+          // Build the query string from the filter parameters
+          const params = new URLSearchParams();
+          Object.keys(filterParams).forEach(key => {
+              params.append(key, filterParams[key]);
+          });
+
+          // Create the URL with the query parameters
+          const url = window.location.pathname + '?' + params.toString();
+          // Make the AJAX request
+          fetch(url, {
+              method: 'GET',
+              headers: {
+                  'X-Requested-With': 'XMLHttpRequest',  // Indicate this is an AJAX request
+              }
+          })
+          .then(response => response.json())
+          .then(data => {
+              // Update the page content dynamically with the new filtered list and pagination
+              document.getElementById('record-list').innerHTML = data.html;
+              document.getElementById('pagination').innerHTML = data.pagination;
+          })
+          .catch(error => console.error('Error updating list:', error));
+      }
+  });
+
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Find all toggle buttons (td elements with id starting with "toggle-")
+    const toggleElements = document.querySelectorAll('td[id^="toggle-"]');
+
+    toggleElements.forEach(toggle => {
+      // Get the unique uuid from the id of the toggle element
+      const uuid = toggle.id.slice(7); // Remove "toggle-" prefix to get the UUID
+      
+      // Add an event listener for the click event on each toggle
+      toggle.addEventListener('click', function() {
+        // Find the corresponding subrow based on the uuid
+        const subrow = document.getElementById(`subrow-${uuid}`);
+        
+        // Toggle the visibility of the subrow
+        if (subrow.style.display === 'none') {
+          subrow.style.display = '';
+        } else {
+          subrow.style.display = 'none';
+        }
+      });
+    });
+  });
+
+</script>

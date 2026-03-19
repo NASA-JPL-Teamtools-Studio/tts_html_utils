@@ -1,0 +1,8 @@
+/* pane_container.css */
+
+.visible-pane {
+  display: block;
+}
+.hidden-pane {
+  display: none;
+}

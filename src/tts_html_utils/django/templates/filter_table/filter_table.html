@@ -1,0 +1,39 @@
+
+{% include js_template %}
+
+<h1>{{ title }}</h1>
+
+{% if include_calendar %}
+<!-- Filter Form for Date Filters -->
+<form method="GET" action="/{{ base_url_path }}" id="filter-form">
+  <label for="start_date">Start Date:</label>
+  {{ filter_form.start_date }}  <!-- Render the start_date field -->
+
+  <label for="end_date">End Date:</label>
+  {{ filter_form.end_date }}  <!-- Render the end_date field -->
+</form>
+{% endif %}
+
+<form id="search-form">
+  <table>
+    <thead>
+      <tr>
+        {% if include_subrows %}<td><!--toggle--></td>{% endif %}
+        {% for column_header_human, column_header_js, include_filter, filter_values in column_headers %}
+        <th>{{ column_header_human }}
+          {% if include_filter %}
+          <br /><input type="text" id="{{ column_header_js }}-filter" class="filter-input" data-column="{{ column_header_js }}">
+          {% endif %}
+        </th>
+        {% endfor %}
+      </tr>
+    </thead>
+      <tbody id="record-list">
+          {% include list_table_template %}
+      </tbody>
+  </table>
+</form>
+
+<div id="pagination">
+  {% include pagination_template %}
+</div>

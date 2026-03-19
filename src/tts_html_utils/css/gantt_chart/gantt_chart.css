@@ -1,0 +1,330 @@
+.gantt-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cbd5e1;
+    font-family: 'Segoe UI', sans-serif;
+    background: white;
+    height: {{ height }}; 
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #334155;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Toolbar --- */
+.gantt-toolbar {
+    background: #f1f5f9;
+    border-bottom: 1px solid #cbd5e1;
+    padding: 5px 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+    height: 32px;
+}
+.gantt-btn {
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+    transition: background 0.1s;
+}
+.gantt-btn:hover { background-color: #e2e8f0; }
+
+.cursor-time-display {
+    font-family: monospace;
+    font-weight: 600;
+    color: #2563eb;
+    background: rgba(255,255,255,0.5);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    min-width: 140px; 
+    text-align: center;
+}
+.view-range-display {
+    font-weight: 600;
+    color: #475569;
+    font-size: 12px;
+}
+
+/* --- Header --- */
+.gantt-header-row {
+    display: flex;
+    border-bottom: 1px solid #cbd5e1;
+    background: #f8fafc;
+    height: 30px;
+    line-height: 30px;
+    flex-shrink: 0;
+    font-weight: bold;
+    color: #475569;
+}
+.gantt-sidebar-header {
+    width: 300px;
+    padding-left: 15px;
+    border-right: 1px solid #e2e8f0;
+    flex-shrink: 0;
+    background: #f8fafc;
+    box-sizing: border-box;
+}
+.gantt-timeline-header {
+    flex-grow: 1;
+    padding-left: 15px;
+    background: #f8fafc;
+    border-left: 1px solid #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: col-resize;
+}
+
+/* --- Body --- */
+.gantt-body {
+    display: flex;
+    flex-grow: 1;
+    overflow-y: hidden; /* Hide vertical scrolling here */
+    overflow-x: hidden;
+    position: relative;
+}
+
+.gantt-sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    border-right: 1px solid #e2e8f0;
+    background: #fff;
+    position: absolute; /* Change to absolute for JS positioning */
+    left: 0;
+    top: 0;
+    z-index: 20;
+    will-change: transform; /* Hint for browser to use hardware acceleration */
+    transform: translateY(0); /* Initial transform state */
+}
+.sidebar-spacer {
+    height: 40px; 
+    border-bottom: 1px solid #e2e8f0;
+    background: #fcfcfc;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 11px;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.gantt-timeline-scroll-area {
+    flex-grow: 1;
+    overflow-x: auto;
+    overflow-y: auto; /* Add vertical scrolling */
+    position: relative;
+    cursor: crosshair;
+}
+.gantt-timeline-canvas {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    margin-left: 300px; /* Same as sidebar width */
+}
+
+/* Axis */
+.gantt-axis-row {
+    position: sticky;
+    top: 0;
+    height: 40px; 
+    background: #fcfcfc; 
+    border-bottom: 1px solid #e2e8f0;
+    z-index: 10;
+    white-space: nowrap;
+    pointer-events: none;
+    margin-left: 0; /* Ensure axis starts at the left edge of the canvas */
+    width: 100%; /* Ensure it spans the full width */
+}
+.gantt-tick {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    border-left: 1px solid #e2e8f0;
+    padding-left: 6px;
+    font-size: 11px;
+    color: #64748b;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+.gantt-tick.major-tick {
+    border-left: 1px solid #94a3b8;
+    font-weight: bold;
+    color: #334155;
+    background: rgba(241, 245, 249, 0.5);
+}
+
+.gantt-grid-line {
+    position: absolute;
+    top: 40px; 
+    bottom: 0;
+    border-left: 1px dashed #f1f5f9;
+    pointer-events: none;
+    z-index: 0;
+}
+.gantt-grid-line.major-grid {
+    border-left: 1px solid #e2e8f0;
+}
+
+/* Horizontal grid lines */
+.gantt-grid-line-horizontal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-top: 1px solid #cbd5e1; /* Slightly darker for better visibility */
+    pointer-events: none;
+    z-index: 5; /* Higher z-index to ensure visibility */
+    width: 100%;
+    opacity: 1 !important; /* Ensure they're always visible */
+}
+
+/* Rows & Bars */
+.task-row {
+    height: 35px; 
+    border-bottom: 1px solid #e2e8f0; /* Darker border for better visibility */
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.task-row:hover { background-color: #f8fafc; }
+
+/* Below-the-fold styling */
+.task-row.below-fold { 
+    background-color: #f8fafc; 
+    border-left: 3px solid #cbd5e1; 
+}
+.task-row.below-fold:hover { 
+    background-color: #f1f5f9; 
+}
+
+/* Fold separator styling */
+.fold-separator {
+    height: 30px;
+    background-color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #cbd5e1;
+    border-top: 1px solid #cbd5e1;
+    position: relative;
+    z-index: 5;
+}
+
+.separator-text {
+    font-weight: 600;
+    font-size: 12px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fold-separator-timeline {
+    height: 30px;
+    background-color: #e2e8f0;
+    position: absolute;
+    border-bottom: 1px solid #cbd5e1;
+    border-top: 1px solid #cbd5e1;
+    z-index: 2;
+}
+
+.task-name-container {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.toggle-icon {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: #94a3b8;
+}
+
+.gantt-bar {
+    position: absolute;
+    height: 20px;
+    top: 7.5px;
+    background-color: #3b82f6;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 2px;
+    transition: opacity 0.2s;
+    z-index: 5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.gantt-bar:hover { opacity: 0.8; }
+.gantt-bar.parent-bar {
+    background-color: #64748b;
+    height: 20px; /* Same height as regular bars */
+    top: 7.5px; /* Same top position as regular bars */
+    opacity: 0.7; /* Slightly increased opacity for better visibility */
+    cursor: pointer; /* Show pointer cursor to indicate clickability */
+    transition: all 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Add hover effect to parent bars to indicate they're clickable */
+.gantt-bar.parent-bar:hover {
+    opacity: 0.9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+/* Parent activity group box */
+.parent-activity-group {
+    position: absolute;
+    background-color: rgba(241, 245, 249, 0.5); /* Light blue-gray background */
+    border: 1px solid #cbd5e1; /* Light border */
+    border-radius: 6px;
+    z-index: 1; /* Below the bars but above the grid */
+    pointer-events: none; /* Allow clicking through to the bars */
+}
+
+/* Full-height highlight for activities */
+.gantt-full-height-highlight {
+    position: absolute;
+    background-color: rgba(59, 130, 246, 0.12); /* Default light blue with 12% opacity */
+    border-left: 1px solid rgba(59, 130, 246, 0.25); /* Default border color */
+    border-right: 1px solid rgba(59, 130, 246, 0.25); /* Default border color */
+    z-index: 1; /* Below the bars but above the grid */
+    pointer-events: none; /* Allow clicking through to the bars */
+    /* Ensure the highlight extends to the full height */
+    height: 100% !important;
+    bottom: 0 !important; /* Extend to the bottom of the container */
+}
+
+/* Add a subtle shadow to the parent activity group */
+.parent-activity-group.with-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.gantt-tooltip {
+    position: fixed;
+    background: #1e293b;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
