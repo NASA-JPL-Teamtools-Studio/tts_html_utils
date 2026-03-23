@@ -143,7 +143,7 @@ class TestHtmlCompiler:
         
         # Check direct injection into Head
         assert '<style>https://cdn.com/style.css</style>' in html
-        assert '<script>https://cdn.com/script.js</script>' in html
+        assert '<script src="https://cdn.com/script.js"></script>' in html
 
     def test_dependency_injection_file_template(self, tmp_path):
         """
