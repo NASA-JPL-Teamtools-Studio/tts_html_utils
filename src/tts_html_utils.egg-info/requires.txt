@@ -1,0 +1,9 @@
+beautifulsoup4
+datetime
+django
+jinja2
+numpy
+pandas
+plotly
+pytest
+tts-utilities<1.0.0,>=0.2.1

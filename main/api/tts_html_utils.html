@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tts_html_utils &mdash; tts-html-utils 0.5.4.dev1+ga8071e605.d20260324 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/bugfix.css?v=aa86f000" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5f6f4990"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tts_html_utils.core" href="tts_html_utils.core.html" />
+    <link rel="prev" title="tts-html-utils" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            tts-html-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tts_html_utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tts_html_utils.core.html">tts_html_utils.core</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tts_html_utils.django.html">tts_html_utils.django</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tts_html_utils.jupyter.html">tts_html_utils.jupyter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-tts_html_utils.resource">tts_html_utils.resource</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.resource.compile_scripts"><code class="docutils literal notranslate"><span class="pre">compile_scripts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.resource.compile_styles"><code class="docutils literal notranslate"><span class="pre">compile_styles()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.resource.get_js_template"><code class="docutils literal notranslate"><span class="pre">get_js_template()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.resource.get_script"><code class="docutils literal notranslate"><span class="pre">get_script()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.resource.get_stylesheet"><code class="docutils literal notranslate"><span class="pre">get_stylesheet()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.resource.get_template"><code class="docutils literal notranslate"><span class="pre">get_template()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.resource.render_html_from_stock_template"><code class="docutils literal notranslate"><span class="pre">render_html_from_stock_template()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.resource.render_html_from_template"><code class="docutils literal notranslate"><span class="pre">render_html_from_template()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">tts-html-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">tts_html_utils</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tts_html_utils">
+<span id="tts-html-utils"></span><h1>tts_html_utils<a class="headerlink" href="#module-tts_html_utils" title="Link to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tts_html_utils.core.html">tts_html_utils.core</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tts_html_utils.core.components.html">tts_html_utils.core.components</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tts_html_utils.core.components.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tts_html_utils.core.html#module-tts_html_utils.core.compiler">tts_html_utils.core.compiler</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tts_html_utils.core.html#tts_html_utils.core.compiler.HtmlCompiler"><code class="docutils literal notranslate"><span class="pre">HtmlCompiler</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tts_html_utils.core.html#tts_html_utils.core.compiler.group_by_path_with_unique_dicts"><code class="docutils literal notranslate"><span class="pre">group_by_path_with_unique_dicts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tts_html_utils.core.html#tts_html_utils.core.compiler.make_hashable"><code class="docutils literal notranslate"><span class="pre">make_hashable()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tts_html_utils.django.html">tts_html_utils.django</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.django.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tts_html_utils.django.forms.html">tts_html_utils.django.forms</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tts_html_utils.django.forms.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tts_html_utils.django.tables.html">tts_html_utils.django.tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tts_html_utils.django.tables.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tts_html_utils.jupyter.html">tts_html_utils.jupyter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.jupyter.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tts_html_utils.jupyter.html#module-tts_html_utils.jupyter.grid">tts_html_utils.jupyter.grid</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tts_html_utils.jupyter.html#tts_html_utils.jupyter.grid.IPythonGrid"><code class="docutils literal notranslate"><span class="pre">IPythonGrid</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+<section id="module-tts_html_utils.resource">
+<span id="tts-html-utils-resource"></span><h3>tts_html_utils.resource<a class="headerlink" href="#module-tts_html_utils.resource" title="Link to this heading"></a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="tts_html_utils.resource.compile_scripts">
+<span class="sig-prename descclassname"><span class="pre">tts_html_utils.resource.</span></span><span class="sig-name descname"><span class="pre">compile_scripts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scripts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.resource.compile_scripts" title="Link to this definition"></a></dt>
+<dd><p>Extracts JavaScript content and wraps it in HTML <cite>&lt;script&gt;</cite> tags.</p>
+<p>This function goes one step further than <cite>compile_styles</cite>. Since JavaScript 
+cannot just be dumped into the page (it must be inside a <cite>&lt;script&gt;</cite> block), 
+this function reads the content and then uses the <cite>script_general.html</cite> 
+template to wrap it properly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>scripts</strong> (<em>list</em>) – A list of JS file paths or raw JS strings.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of HTML strings, each containing a full <cite>&lt;script&gt;…&lt;/script&gt;</cite> block.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tts_html_utils.resource.compile_styles">
+<span class="sig-prename descclassname"><span class="pre">tts_html_utils.resource.</span></span><span class="sig-name descname"><span class="pre">compile_styles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">styles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.resource.compile_styles" title="Link to this definition"></a></dt>
+<dd><p>Extracts the CSS content from a list of style resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>styles</strong> (<em>list</em>) – A list of CSS file paths or raw CSS strings.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of strings containing the CSS code.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tts_html_utils.resource.get_js_template">
+<span class="sig-prename descclassname"><span class="pre">tts_html_utils.resource.</span></span><span class="sig-name descname"><span class="pre">get_js_template</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.resource.get_js_template" title="Link to this definition"></a></dt>
+<dd><p>Locates a JavaScript template within the library’s internal <cite>javascript</cite> directory.</p>
+<p><strong>Note:</strong> A “JS Template” is a JavaScript file that contains Python variables (Jinja syntax).
+Example: <cite>var data = {{ python_data_variable }};</cite>
+These need to be rendered before the browser can understand them.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fname</strong> (<em>str</em>) – The filename of the JS template.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The full absolute path to the file.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Path</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the file does not exist.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tts_html_utils.resource.get_script">
+<span class="sig-prename descclassname"><span class="pre">tts_html_utils.resource.</span></span><span class="sig-name descname"><span class="pre">get_script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.resource.get_script" title="Link to this definition"></a></dt>
+<dd><p>Locates a JavaScript file within the library’s internal <cite>scripts</cite> directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fname</strong> (<em>str</em>) – The filename of the script (e.g., ‘sort_table.js’).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The full absolute path to the file.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Path</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the file does not exist.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tts_html_utils.resource.get_stylesheet">
+<span class="sig-prename descclassname"><span class="pre">tts_html_utils.resource.</span></span><span class="sig-name descname"><span class="pre">get_stylesheet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.resource.get_stylesheet" title="Link to this definition"></a></dt>
+<dd><p>Locates a CSS stylesheet within the library’s internal resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fname</strong> (<em>str</em>) – The filename of the stylesheet (e.g., ‘default_styles.css’).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The full absolute path to the file.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Path</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the file does not exist.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tts_html_utils.resource.get_template">
+<span class="sig-prename descclassname"><span class="pre">tts_html_utils.resource.</span></span><span class="sig-name descname"><span class="pre">get_template</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.resource.get_template" title="Link to this definition"></a></dt>
+<dd><p>Locates an HTML template file within the library’s internal <cite>html_templates</cite> directory.</p>
+<p><strong>Concept:</strong>
+Instead of writing hardcoded HTML strings in Python code, we store them as 
+separate <cite>.html</cite> files. This function grabs the path to one of those files 
+so it can be loaded by the Jinja2 engine.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fname</strong> (<em>str</em>) – The filename of the template (e.g., ‘table_component.html’).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The full absolute path to the file.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Path</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the file does not exist.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tts_html_utils.resource.render_html_from_stock_template">
+<span class="sig-prename descclassname"><span class="pre">tts_html_utils.resource.</span></span><span class="sig-name descname"><span class="pre">render_html_from_stock_template</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">template_name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">template_kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.resource.render_html_from_stock_template" title="Link to this definition"></a></dt>
+<dd><p>A shortcut wrapper for <cite>render_html_from_template</cite>.</p>
+<p>This function assumes you want to use one of the “Stock” templates provided 
+by this library (located in <cite>HTML_TEMPLATES_DIR</cite>), rather than a custom file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>template_name</strong> (<em>str</em>) – The name of the stock template file.</p></li>
+<li><p><strong>template_kwargs</strong> – Variables to inject into the template.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The rendered HTML string.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tts_html_utils.resource.render_html_from_template">
+<span class="sig-prename descclassname"><span class="pre">tts_html_utils.resource.</span></span><span class="sig-name descname"><span class="pre">render_html_from_template</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">template_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template_name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">template_kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.resource.render_html_from_template" title="Link to this definition"></a></dt>
+<dd><p>The core rendering engine.</p>
+<p>This function uses <strong>Jinja2</strong> to take a template file (HTML with holes in it) 
+and a dict of python variables (the data to fill the holes) and produces a final 
+HTML string.</p>
+<p><strong>Security Note (XSS):</strong>
+We enable <cite>autoescape=True</cite> for HTML and XML files. This prevents Cross-Site Scripting 
+attacks. If a user tries to inject a variable containing <cite>&lt;script&gt;alert(‘hack’)&lt;/script&gt;</cite>, 
+Jinja automatically converts it to safe text (<cite>&amp;lt;script&amp;gt;…</cite>) so it displays 
+as text rather than executing as code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>template_dir</strong> (<em>str</em><em> or </em><em>Path</em>) – The directory where the template file resides.</p></li>
+<li><p><strong>template_name</strong> (<em>str</em>) – The name of the specific file to load.</p></li>
+<li><p><strong>template_kwargs</strong> – Key-value pairs representing variables to inject into the template.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The fully rendered HTML string.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="tts-html-utils" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tts_html_utils.core.html" class="btn btn-neutral float-right" title="tts_html_utils.core" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026 JPL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
