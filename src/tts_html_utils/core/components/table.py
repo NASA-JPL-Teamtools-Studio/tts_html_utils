@@ -94,15 +94,20 @@ class Header(HtmlComponentSimple):
     :type include_filter_inputs: bool
     """
     TAG = 'thead'
-    def __init__(self, column_names, class_name=None, extra_class_name=None, style={}, include_filter_inputs=False):
+    def __init__(self, column_names, class_name=None, extra_class_name=None, style={}, include_filter_inputs=False, include_sorting=False):
         super().__init__(class_name=class_name, extra_class_name=extra_class_name, style=style)
         self.col_names = column_names
         self.cells = []
         for col_name in self.col_names:
             children = col_name
             column_header_js = col_name.lower().replace(' ','-').replace('_','-')
-            if include_filter_inputs:
+            
+            # Wrap in sort div if sorting is enabled
+            if include_sorting:
                 children = f'<div id="{column_header_js}-sort">{children}</div>'
+            
+            # Add filter input if filtering is enabled
+            if include_filter_inputs:
                 #to do: consider making List class for this
                 #but for now this is good enough
                 children += f'<input type="text" id="{column_header_js}-filter" class="filter-input" data-column="{column_header_js}">'
@@ -309,7 +314,7 @@ class PowerTable(HtmlComponent):
                 raise ValueError(f'Must set either column_names or have column_fields already set when adding header')
             column_names = [_.title() for _ in self.col_fields]
 
-        self.header = Header(column_names, class_name=class_name, extra_class_name=extra_class_name, style=style, include_filter_inputs=self.filter_table)
+        self.header = Header(column_names, class_name=class_name, extra_class_name=extra_class_name, style=style, include_filter_inputs=self.filter_table, include_sorting=bool(self.add_sorting))
 
     def add_superheader(self, text, class_name=None, extra_class_name=None, collapsible=False, default_closed=False, style={}):
         """

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to handle sorting click event
     function onSortClick(event) {
-        const sortId = event.target.id; // Get the ID of the clicked element
+        const sortId = event.currentTarget.id; // Get the ID of the element with the listener
         const column = getColumnIndexFromSortId(sortId);
 
         pressCount++;
@@ -68,11 +68,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 const cellA = rowA.cells[columnIndex].textContent.trim();
                 const cellB = rowB.cells[columnIndex].textContent.trim();
 
-                // Compare the values of the column
-                if (cellA < cellB) {
-                    comparison = -1;
-                } else if (cellA > cellB) {
-                    comparison = 1;
+                // Try to parse as numbers for numeric comparison
+                const numA = parseFloat(cellA);
+                const numB = parseFloat(cellB);
+                
+                // If both are valid numbers, compare numerically
+                if (!isNaN(numA) && !isNaN(numB)) {
+                    comparison = numA - numB;
+                } else {
+                    // Otherwise compare as strings (case-insensitive)
+                    const strA = cellA.toLowerCase();
+                    const strB = cellB.toLowerCase();
+                    if (strA < strB) {
+                        comparison = -1;
+                    } else if (strA > strB) {
+                        comparison = 1;
+                    }
                 }
 
                 // Reverse the comparison if the direction is descending
