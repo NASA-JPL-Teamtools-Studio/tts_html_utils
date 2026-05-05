@@ -17,8 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to handle sorting click event
     function onSortClick(event) {
-        const sortId = event.target.id; // Get the ID of the clicked element
+        const sortId = event.currentTarget.id; // Get the ID of the element with the listener
         const column = getColumnIndexFromSortId(sortId);
+        
+        console.log(`Sort clicked: sortId=${sortId}, columnIndex=${column}`);
 
         pressCount++;
 
@@ -54,9 +56,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const sortColumns = filteredEntries.map(entry => entry[0]); // Column indices
         const sortDirections = filteredEntries.map(entry => entry[1].direction); // Sort directions (ascending, descending)
 
-        // Get all rows of the table
-        const primary_rows = Array.from(table.querySelectorAll('tbody > tr'))
+        // Get all rows of the table (only direct children of tbody, not nested table rows)
+        const tbody = table.querySelector('tbody');
+        const primary_rows = Array.from(tbody.querySelectorAll(':scope > tr'))
             .filter(row => !row.id.includes('-details')); // Only include rows without '-details'
+
+        // Store detail rows with their parent row IDs
+        const detailRowMap = {};
+        primary_rows.forEach(row => {
+            const detailsRow = document.getElementById(`${row.id}-details`);
+            if (detailsRow) {
+                detailRowMap[row.id] = detailsRow;
+                // Remove detail row from DOM temporarily
+                detailsRow.remove();
+            }
+        });
 
         // Sort rows based on the columns in sortColumns
         primary_rows.sort((rowA, rowB) => {
@@ -65,14 +79,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 const columnIndex = sortColumns[i];
                 const direction = sortDirections[i];
 
+                // Debug: log cell counts
+                if (i === 0) {
+                    console.log(`Sorting: rowA has ${rowA.cells.length} cells, rowB has ${rowB.cells.length} cells, trying to access index ${columnIndex}`);
+                }
+
+                // Validate cells exist
+                if (!rowA.cells[columnIndex] || !rowB.cells[columnIndex]) {
+                    console.error(`Missing cell at index ${columnIndex}. RowA cells: ${rowA.cells.length}, RowB cells: ${rowB.cells.length}`);
+                    continue;
+                }
+
                 const cellA = rowA.cells[columnIndex].textContent.trim();
                 const cellB = rowB.cells[columnIndex].textContent.trim();
 
-                // Compare the values of the column
-                if (cellA < cellB) {
-                    comparison = -1;
-                } else if (cellA > cellB) {
-                    comparison = 1;
+                // Try to parse as numbers for numeric comparison
+                const numA = parseFloat(cellA);
+                const numB = parseFloat(cellB);
+                
+                // If both are valid numbers, compare numerically
+                if (!isNaN(numA) && !isNaN(numB)) {
+                    comparison = numA - numB;
+                } else {
+                    // Otherwise compare as strings (case-insensitive)
+                    const strA = cellA.toLowerCase();
+                    const strB = cellB.toLowerCase();
+                    if (strA < strB) {
+                        comparison = -1;
+                    } else if (strA > strB) {
+                        comparison = 1;
+                    }
                 }
 
                 // Reverse the comparison if the direction is descending
@@ -89,15 +125,14 @@ document.addEventListener("DOMContentLoaded", function () {
             return comparison;
         });
 
-        // Re-append the sorted rows to the table
-        const tbody = table.querySelector('tbody');
+        // Clear tbody and re-append sorted rows with their detail rows
+        tbody.innerHTML = '';
         primary_rows.forEach(row => {
             tbody.appendChild(row); // Append the sorted main row
             
-            // Check if the corresponding -details row exists
-            const detailsRow = document.getElementById(`${row.id}-details`);
-            if (detailsRow) {
-                tbody.appendChild(detailsRow); // Append the related -details row after the main row
+            // Re-insert the detail row if it exists
+            if (detailRowMap[row.id]) {
+                tbody.appendChild(detailRowMap[row.id]);
             }
         });
 
@@ -108,15 +143,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const headers = table.querySelectorAll('thead > tr.header > th');
         let columnIndex = null;
 
+        console.log(`Looking for sortId: ${sortId} among ${headers.length} headers`);
+
         // Loop through all header cells and match the ID of the sort element to the corresponding column
         headers.forEach((header, index) => {
             // Find the sort elements inside the header and match their IDs
             const sortDiv = header.querySelector('div[id$="-sort"]');
+            console.log(`  Header ${index}: sortDiv=${sortDiv ? sortDiv.id : 'none'}`);
             if (sortDiv && sortDiv.id === sortId) {
                 columnIndex = index;
+                console.log(`  -> MATCH at index ${index}`);
             }
         });
 
+        console.log(`Final columnIndex: ${columnIndex}`);
         return columnIndex;
     }
 });

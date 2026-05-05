@@ -47,7 +47,7 @@ class TestTableComponents:
 
     def test_header_with_filters(self):
         """Test Header injects input fields when filtering is enabled."""
-        h = Header(['Name'], include_filter_inputs=True)
+        h = Header(['Name'], add_filters=True)
         html = h.render()
         
         assert 'input' in html
