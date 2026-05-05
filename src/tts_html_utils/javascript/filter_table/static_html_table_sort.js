@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function onSortClick(event) {
         const sortId = event.currentTarget.id; // Get the ID of the element with the listener
         const column = getColumnIndexFromSortId(sortId);
+        
+        console.log(`Sort clicked: sortId=${sortId}, columnIndex=${column}`);
 
         pressCount++;
 
@@ -64,6 +66,17 @@ document.addEventListener("DOMContentLoaded", function () {
             for (let i = 0; i < sortColumns.length; i++) {
                 const columnIndex = sortColumns[i];
                 const direction = sortDirections[i];
+
+                // Debug: log cell counts
+                if (i === 0) {
+                    console.log(`Sorting: rowA has ${rowA.cells.length} cells, rowB has ${rowB.cells.length} cells, trying to access index ${columnIndex}`);
+                }
+
+                // Validate cells exist
+                if (!rowA.cells[columnIndex] || !rowB.cells[columnIndex]) {
+                    console.error(`Missing cell at index ${columnIndex}. RowA cells: ${rowA.cells.length}, RowB cells: ${rowB.cells.length}`);
+                    continue;
+                }
 
                 const cellA = rowA.cells[columnIndex].textContent.trim();
                 const cellB = rowB.cells[columnIndex].textContent.trim();
@@ -119,15 +132,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const headers = table.querySelectorAll('thead > tr.header > th');
         let columnIndex = null;
 
+        console.log(`Looking for sortId: ${sortId} among ${headers.length} headers`);
+
         // Loop through all header cells and match the ID of the sort element to the corresponding column
         headers.forEach((header, index) => {
             // Find the sort elements inside the header and match their IDs
             const sortDiv = header.querySelector('div[id$="-sort"]');
+            console.log(`  Header ${index}: sortDiv=${sortDiv ? sortDiv.id : 'none'}`);
             if (sortDiv && sortDiv.id === sortId) {
                 columnIndex = index;
+                console.log(`  -> MATCH at index ${index}`);
             }
         });
 
+        console.log(`Final columnIndex: ${columnIndex}`);
         return columnIndex;
     }
 });
