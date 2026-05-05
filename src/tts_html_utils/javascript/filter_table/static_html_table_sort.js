@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const sortColumns = filteredEntries.map(entry => entry[0]); // Column indices
         const sortDirections = filteredEntries.map(entry => entry[1].direction); // Sort directions (ascending, descending)
 
-        // Get all rows of the table
+        // Get all rows of the table (only direct children of tbody, not nested table rows)
         const tbody = table.querySelector('tbody');
-        const primary_rows = Array.from(tbody.querySelectorAll('tr'))
+        const primary_rows = Array.from(tbody.querySelectorAll(':scope > tr'))
             .filter(row => !row.id.includes('-details')); // Only include rows without '-details'
 
         // Store detail rows with their parent row IDs
