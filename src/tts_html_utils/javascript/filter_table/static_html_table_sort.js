@@ -57,8 +57,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const sortDirections = filteredEntries.map(entry => entry[1].direction); // Sort directions (ascending, descending)
 
         // Get all rows of the table
-        const primary_rows = Array.from(table.querySelectorAll('tbody > tr'))
+        const tbody = table.querySelector('tbody');
+        const primary_rows = Array.from(tbody.querySelectorAll('tr'))
             .filter(row => !row.id.includes('-details')); // Only include rows without '-details'
+
+        // Store detail rows with their parent row IDs
+        const detailRowMap = {};
+        primary_rows.forEach(row => {
+            const detailsRow = document.getElementById(`${row.id}-details`);
+            if (detailsRow) {
+                detailRowMap[row.id] = detailsRow;
+                // Remove detail row from DOM temporarily
+                detailsRow.remove();
+            }
+        });
 
         // Sort rows based on the columns in sortColumns
         primary_rows.sort((rowA, rowB) => {
@@ -113,15 +125,14 @@ document.addEventListener("DOMContentLoaded", function () {
             return comparison;
         });
 
-        // Re-append the sorted rows to the table
-        const tbody = table.querySelector('tbody');
+        // Clear tbody and re-append sorted rows with their detail rows
+        tbody.innerHTML = '';
         primary_rows.forEach(row => {
             tbody.appendChild(row); // Append the sorted main row
             
-            // Check if the corresponding -details row exists
-            const detailsRow = document.getElementById(`${row.id}-details`);
-            if (detailsRow) {
-                tbody.appendChild(detailsRow); // Append the related -details row after the main row
+            // Re-insert the detail row if it exists
+            if (detailRowMap[row.id]) {
+                tbody.appendChild(detailRowMap[row.id]);
             }
         });
 
