@@ -24,6 +24,11 @@ Welcome to the HTML Utils documentation!
    table
    text
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Examples:
+
+   custom_examples
 
 
 Indices and tables
