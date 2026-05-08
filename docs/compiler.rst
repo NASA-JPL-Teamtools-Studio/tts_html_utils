@@ -1,5 +1,5 @@
 Compiler
 ===============
 
-.. automodule:: html_utils.core.compiler
+.. automodule:: tts_html_utils.core.compiler
    :members:

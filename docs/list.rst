@@ -1,5 +1,5 @@
 List
 ===============
 
-.. automodule:: html_utils.core.components.list
+.. automodule:: tts_html_utils.core.components.list
    :members:

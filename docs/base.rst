@@ -1,5 +1,5 @@
 Base
 ===============
 
-.. automodule:: html_utils.core.components.base
+.. automodule:: tts_html_utils.core.components.base
    :members:
