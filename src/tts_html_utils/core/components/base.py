@@ -4,7 +4,7 @@ from uuid import uuid4
 import pdb
 
 #Installed Dependecy Imports
-#none yet
+from jinja2 import Template
 
 #Teamtools Studio Imports
 from tts_utilities.util import as_list
@@ -31,6 +31,7 @@ class HtmlComponent(ABC):
     **How it works:**
     Every specific HTML tag (like `Div`, `Span`, or `Img`) inherits from this class.
     This base class handles the logic shared by *all* of them, such as:
+    
     1. **Parent/Child Relationships:** Tracking what is inside what.
     2. **Attribute Management:** Handling IDs, CSS classes, and inline styles.
     3. **Dependency bubbling:** If a button deep inside a table requires a specific 

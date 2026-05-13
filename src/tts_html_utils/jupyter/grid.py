@@ -22,31 +22,31 @@ class IPythonGrid:
     that each column is truly independent of the others.
     
     Example:
-        ```python
-        grid = IPythonGrid()
-        
-        # Add content with keys
-        grid.add_content('plot1', fig1)
-        grid.add_content('plot2', fig2)
-        grid.add_content('table1', table_widget)
-        grid.add_content('plot3', fig3)
-        
-        # Configure Plotly figures for better display
-        grid.set_plotly_aspect_ratio('plot1', aspect_ratio=1.5)  # width/height ratio
-        grid.set_plotly_size('plot2', height=400)  # fixed height, auto width
-        
-        # Configure the layout
-        grid.configure_layout([
-            [['plot1', '250px', '50%'], ['plot2', '250px', '50%']],
-            [['table1', '250px', '25%'], ['plot3', '250px', '75%']]
-        ])
-        
-        # Or set uniform row heights
-        grid.set_row_heights(['300px', '400px'])
-        
-        # Display the grid
-        display(grid)
-        ```
+        .. code-block:: python
+
+            grid = IPythonGrid()
+            
+            # Add content with keys
+            grid.add_content('plot1', fig1)
+            grid.add_content('plot2', fig2)
+            grid.add_content('table1', table_widget)
+            grid.add_content('plot3', fig3)
+            
+            # Configure Plotly figures for better display
+            grid.set_plotly_aspect_ratio('plot1', aspect_ratio=1.5)  # width/height ratio
+            grid.set_plotly_size('plot2', height=400)  # fixed height, auto width
+            
+            # Configure the layout
+            grid.configure_layout([
+                [['plot1', '250px', '50%'], ['plot2', '250px', '50%']],
+                [['table1', '250px', '25%'], ['plot3', '250px', '75%']]
+            ])
+            
+            # Or set uniform row heights
+            grid.set_row_heights(['300px', '400px'])
+            
+            # Display the grid
+            display(grid)
     """
     
     def __init__(self):
@@ -74,9 +74,10 @@ class IPythonGrid:
         
         Args:
             key: The key of the Plotly figure content
-            aspect_ratio: The aspect ratio to set (width/height). 
-                          If None, the aspect ratio will be determined by the container.
-                          If a number, the figure will maintain that aspect ratio.
+            aspect_ratio: The aspect ratio to set (width/height).
+
+                - If ``None``, the aspect ratio will be determined by the container.
+                - If a number, the figure will maintain that aspect ratio.
                           
         Returns:
             self for method chaining

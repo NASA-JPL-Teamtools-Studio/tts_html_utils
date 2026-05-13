@@ -4,7 +4,7 @@ from pathlib import Path
 import uuid
 
 #Installed dependency imports
-#None
+from jinja2 import Template
 
 #Teamtools Studio Imports
 from tts_utilities.util import as_list
@@ -210,13 +210,14 @@ class PowerTable(HtmlComponent):
     TAG = 'table'
     DEFAULT_CLASS = ['power-table', 'alternating', 'sticky-header']
     STYLESHEETS = [
-    get_stylesheet('rule_result_table.css'),
-    get_stylesheet('report_base.css'),
-    get_stylesheet('rule_summary.css')
+    # get_stylesheet('rule_result_table.css'),
+    # get_stylesheet('report_base.css'),
+    # get_stylesheet('rule_summary.css')
     ]
 
-    def __init__(self, column_fields=None, row_data=None, class_name=None, extra_class_name=None, id=None, style={'text-align': 'left'}, row_styles=None, cell_classes=None, cell_styles=None, add_filters=None, add_sorting=None):
+    def __init__(self, column_fields=None, row_data=None, class_name=None, extra_class_name=None, id=None, style={'text-align': 'left'}, row_styles=None, cell_classes=None, cell_styles=None, add_filters=None, add_sorting=None, stylesheets=None):
         #to do, put consider putting style into a sheet
+        self.stylesheets = stylesheets if stylesheets is not None else self.STYLESHEETS
         style = {**style, **{'border': '2px black solid'}}
         super().__init__(class_name=class_name, extra_class_name=extra_class_name, id=id, style=style)
         self.col_fields = column_fields
@@ -292,7 +293,7 @@ class PowerTable(HtmlComponent):
                 raise Exception(f'I don\'t understand how to add {add_sorting} sorting')
             self.js_includes.append((js_path, {'table_id': self.id}))
 
-        self.css_includes = [(s, {}) for s in self.STYLESHEETS]
+        self.css_includes = [(s, {}) for s in self.stylesheets]
 
         
     def add_header(self, column_names=None, class_name=None, extra_class_name=None, style={}):
@@ -384,14 +385,35 @@ class PowerTable(HtmlComponent):
         """
         raise NotImplementedError(f'Use full render pipeline for PowerTable')
 
-    def render(self):
+    def render(self, include_js=False, include_css=False):
         """
         Converts the python objects into rendered HTML.
         
         This method uses a dedicated Jinja2 template (`table.html`) to ensure 
         headers, superheaders, and sorting/filtering inputs are placed correctly.
         """
-        return render_html_from_stock_template(
+        if include_js:
+            script = ''
+            for js_path, context in self.js_includes:
+                js_template_text = js_path.open('r').read()
+                template = Template(js_template_text)
+                rendered_js = template.render(**context)
+                script += f'<script>{rendered_js}</script>\n'
+        else:
+            script = ''
+        if include_css:
+            style = ''
+            for css_path, context in self.css_includes:
+                css_template_text = css_path.open('r').read()
+                template = Template(css_template_text)
+                rendered_css = template.render(**context)
+                style += f'<style>{rendered_css}</style>\n'
+        else:
+            style = ''
+        
+        power_table = render_html_from_stock_template(
             'table.html',
             table=self
         )
+
+        return script + style + power_table
