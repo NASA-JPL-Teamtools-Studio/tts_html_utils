@@ -138,7 +138,7 @@ class PaneContainer(HtmlComponentSimple):
         for k in self.panes.keys():
             pane_id = pane_ids[k]
             # Use the full pane ID for the href
-            nav_links[k] = '#' + pane_id
+            nav_links[k] = {'href': '#' + pane_id, 'attr': {'data-nav': pane_id}}
         
         navbar = Navbar(nav_links)
         # Add container ID to the navbar

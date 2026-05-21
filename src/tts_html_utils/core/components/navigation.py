@@ -46,10 +46,14 @@ class Navbar(PowerList):
         :type new_tab: bool
         """
         for label, href in mapping.items():
-            if isinstance(href, dict):
+            if isinstance(href, dict) and 'href' not in href:
                 self.up_level(label=label)
-                self.add_items(href)
+                self.add_items(href, new_tab=new_tab)
                 self.down_level()
+            elif isinstance(href, dict) and 'href' in href:
+                link_href = href['href']
+                link_attr = href.get('attr', {})
+                self.line(Link(label, href=link_href, new_tab=new_tab, attr=link_attr), class_name='navbartab')
             else:
                 self.line(Link(label, href=href, new_tab=new_tab), class_name='navbartab')
 
