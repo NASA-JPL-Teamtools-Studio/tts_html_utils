@@ -1,0 +1,128 @@
+/* Read the Docs Modern Table Theme 
+   Tailored for tts-html-utils requirements tables
+*/
+
+/* Table Container & Base */
+.power-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    color: #404040;
+    border: 1px solid #e1e4e5 !important;
+    background-color: #fff;
+    table-layout: auto; /* Allows columns to shrink/grow based on content */
+}
+
+/* Header Styling */
+.power-table thead tr.header {
+    background: #f3f6f6;
+}
+
+.power-table th {
+    font-weight: bold;
+    color: #2980b9; 
+    padding: 12px;
+    border: 1px solid #e1e4e5;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* --- Specific Column Width Control --- */
+
+/* Level and ID: Minimal width */
+.power-table th:nth-child(1), .power-table td:nth-child(1),
+.power-table th:nth-child(2), .power-table td:nth-child(2),
+.power-table th:nth-child(5), .power-table td:nth-child(5) {
+    width: 50px;
+}
+
+/* Description & Rationale (4th & 5th): Flexible / Wide */
+.power-table th:nth-child(3), .power-table td:nth-child(3),
+.power-table th:nth-child(4), .power-table td:nth-child(4) {
+    min-width: 200px;
+}
+
+/* --- Header Elements (Sort & Filter) --- */
+
+.power-table th > div[id$="-sort"] {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    position: relative;
+    padding-right: 18px;
+    white-space: nowrap;
+}
+
+.power-table th > div[id$="-sort"]::after {
+    content: "↕";
+    position: absolute;
+    right: 0;
+    color: #adadad;
+    font-size: 11px;
+}
+
+.filter-input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 4px 8px;
+    border: 1px solid #d1d4d5;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: inherit;
+    box-sizing: border-box; 
+    background-color: #ffffff;
+}
+
+.filter-input:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 4px rgba(41, 128, 185, 0.2);
+}
+
+/* --- Body Rows --- */
+
+.power-table tbody tr {
+    border-bottom: 1px solid #e1e4e5;
+    transition: background-color 0.1s ease;
+}
+
+.power-table td {
+    padding: 10px 12px;
+    line-height: 1.6;
+    vertical-align: top;
+    border: 1px solid #e1e4e5;
+}
+
+/* Alternating Row Color (Striping) */
+.power-table.alternating tbody tr.prime_row:nth-of-type(4n+1) {
+    background-color: #ffffff;
+}
+
+.power-table.alternating tbody tr.prime_row:nth-of-type(4n+3) {
+    background-color: #fcfcfc;
+}
+
+.power-table tbody tr.prime_row:hover {
+    background-color: #f5f7f8 !important;
+    cursor: pointer;
+}
+
+/* Details Row (Hidden Content) */
+.detail_row td {
+    background-color: #fbfbfb;
+    padding: 0;
+    border-top: none;
+}
+
+/* Sticky Header Logic */
+.sticky-header thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #f3f6f6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}

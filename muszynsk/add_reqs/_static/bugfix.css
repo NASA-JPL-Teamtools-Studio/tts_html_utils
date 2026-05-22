@@ -1,0 +1,29 @@
+/*
+Resolves a bug where the text in the header
+"[package name] [package version] documentation"
+was getting stacked up on top of itself when the variable portions were too long. Something with floats
+and elements not taking up the whole width of their contents.
+
+Needed to add it because setuptools-scm version names can be very long, especially for versions that
+are build off of a commit with no tag
+*/
+.navbar-header-items__start {
+    width: auto;
+}
+
+/* 1. Make the content wrapper expand to fit the table width */
+.wy-nav-content-wrap {
+    background: #fcfcfc !important; /* Matches the standard RTD background */
+    min-height: 100vh;
+}
+
+/* 2. Fix the specific content box background */
+.wy-nav-content {
+    background: #ffffff !important;
+    display: inline-block; /* Forces the box to grow with the table width */
+}
+
+/* 3. Prevent the footer from cutting off early */
+footer {
+    width: 100%;
+}

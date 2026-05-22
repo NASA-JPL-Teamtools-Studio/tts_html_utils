@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tts_html_utils.test.test_table &mdash; tts-html-utils 0.5.6.dev3+gcf830dbf4.d20260511 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/bugfix.css?v=d8ea70b8" />
+      <link rel="stylesheet" type="text/css" href="../../_static/requirements_table.css?v=9dbf44b5" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=2d1a57fa"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="tts_html_utils.test.test_text" href="test_text.html" />
+    <link rel="prev" title="tts_html_utils.test.test_structure" href="test_structure.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            tts-html-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">HTML Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requirements.html">Requirements</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HTML Elements:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">tts_html_utils API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../core/index.html">tts_html_utils.core (Package)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../jupyter/index.html">tts_html_utils.jupyter (Package)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resource.html">tts_html_utils.resource</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">tts_html_utils.test (Package)</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="test_base.html">tts_html_utils.test.test_base</a></li>
+<li class="toctree-l4"><a class="reference internal" href="test_compiler.html">tts_html_utils.test.test_compiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="test_list.html">tts_html_utils.test.test_list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="test_misc.html">tts_html_utils.test.test_misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="test_navigation.html">tts_html_utils.test.test_navigation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="test_plot.html">tts_html_utils.test.test_plot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="test_resource.html">tts_html_utils.test.test_resource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="test_structure.html">tts_html_utils.test.test_structure</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tts_html_utils.test.test_table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="test_text.html">tts_html_utils.test.test_text</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">tts-html-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../api_reference.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">tts_html_utils API</a></li>
+          <li class="breadcrumb-item"><a href="index.html">tts_html_utils.test (Package)</a></li>
+      <li class="breadcrumb-item active">tts_html_utils.test.test_table</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tts_html_utils.test.test_table">
+<span id="tts-html-utils-test-test-table"></span><h1>tts_html_utils.test.test_table<a class="headerlink" href="#module-tts_html_utils.test.test_table" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.test.test_table.</span></span><span class="sig-name descname"><span class="pre">TestTableComponents</span></span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_button_with_extra_attr">
+<span class="sig-name descname"><span class="pre">test_button_with_extra_attr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_button_with_extra_attr" title="Link to this definition"></a></dt>
+<dd><p>Test passing explicit attributes via kwargs covers lines 235-236.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_cell_basic">
+<span class="sig-name descname"><span class="pre">test_cell_basic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_cell_basic" title="Link to this definition"></a></dt>
+<dd><p>Test Cell rendering.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_header_basic">
+<span class="sig-name descname"><span class="pre">test_header_basic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_header_basic" title="Link to this definition"></a></dt>
+<dd><p>Test Header rendering standard TH tags.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_header_with_filters">
+<span class="sig-name descname"><span class="pre">test_header_with_filters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_header_with_filters" title="Link to this definition"></a></dt>
+<dd><p>Test Header injects input fields when filtering is enabled.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_link_with_extra_attr">
+<span class="sig-name descname"><span class="pre">test_link_with_extra_attr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_link_with_extra_attr" title="Link to this definition"></a></dt>
+<dd><p>Test passing explicit attributes via kwargs covers lines 207-208.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_powertable_add_header">
+<span class="sig-name descname"><span class="pre">test_powertable_add_header</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_powertable_add_header" title="Link to this definition"></a></dt>
+<dd><p>Test adding a header explicitly.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_powertable_expandable_rows">
+<span class="sig-name descname"><span class="pre">test_powertable_expandable_rows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_powertable_expandable_rows" title="Link to this definition"></a></dt>
+<dd><p>Test creating a table with expandable details.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_powertable_id_generation">
+<span class="sig-name descname"><span class="pre">test_powertable_id_generation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_powertable_id_generation" title="Link to this definition"></a></dt>
+<dd><p>Test UUID generation for tables.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_powertable_init_simple">
+<span class="sig-name descname"><span class="pre">test_powertable_init_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mock_render</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_powertable_init_simple" title="Link to this definition"></a></dt>
+<dd><p>Test initializing PowerTable with simple dict data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_powertable_invalid_options">
+<span class="sig-name descname"><span class="pre">test_powertable_invalid_options</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_powertable_invalid_options" title="Link to this definition"></a></dt>
+<dd><p>Test that invalid filter/sorting options raise Exceptions (missing else branches).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_powertable_js_injection">
+<span class="sig-name descname"><span class="pre">test_powertable_js_injection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_powertable_js_injection" title="Link to this definition"></a></dt>
+<dd><p>Test that enabling features injects the correct JS.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_powertable_js_injection_complete">
+<span class="sig-name descname"><span class="pre">test_powertable_js_injection_complete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_powertable_js_injection_complete" title="Link to this definition"></a></dt>
+<dd><p>Test ALL branches of JS injection for sorting and filtering.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_powertable_no_features">
+<span class="sig-name descname"><span class="pre">test_powertable_no_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_powertable_no_features" title="Link to this definition"></a></dt>
+<dd><p>Test the explicit ‘else’ block when features are None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_row_basic">
+<span class="sig-name descname"><span class="pre">test_row_basic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_row_basic" title="Link to this definition"></a></dt>
+<dd><p>Test Row rendering with auto-cell wrapping.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_row_manual_cells">
+<span class="sig-name descname"><span class="pre">test_row_manual_cells</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_row_manual_cells" title="Link to this definition"></a></dt>
+<dd><p>Test Row with pre-made Cell objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableComponents.test_superheader">
+<span class="sig-name descname"><span class="pre">test_superheader</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableComponents.test_superheader" title="Link to this definition"></a></dt>
+<dd><p>Test Superheader rendering and attributes.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableCoverage">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.test.test_table.</span></span><span class="sig-name descname"><span class="pre">TestTableCoverage</span></span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableCoverage" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableCoverage.test_powertable_errors">
+<span class="sig-name descname"><span class="pre">test_powertable_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableCoverage.test_powertable_errors" title="Link to this definition"></a></dt>
+<dd><p>Covers lines 300, 371: testing NotImplemented and ValueErrors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableCoverage.test_powertable_list_data">
+<span class="sig-name descname"><span class="pre">test_powertable_list_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableCoverage.test_powertable_list_data" title="Link to this definition"></a></dt>
+<dd><p>Covers line 357: passing a list instead of a dict to add_row.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableCoverage.test_powertable_primary_key_logic">
+<span class="sig-name descname"><span class="pre">test_powertable_primary_key_logic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableCoverage.test_powertable_primary_key_logic" title="Link to this definition"></a></dt>
+<dd><p>Covers lines 241 &amp; 251: using _primary_key for row IDs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableCoverage.test_powertable_render_call">
+<span class="sig-name descname"><span class="pre">test_powertable_render_call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mock_render</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableCoverage.test_powertable_render_call" title="Link to this definition"></a></dt>
+<dd><p>Covers line 380: full render pipeline.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.test.test_table.TestTableCoverage.test_row_with_premade_cells">
+<span class="sig-name descname"><span class="pre">test_row_with_premade_cells</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.test.test_table.TestTableCoverage.test_row_with_premade_cells" title="Link to this definition"></a></dt>
+<dd><p>Covers line 70: passing premade Cell objects to Row.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="test_structure.html" class="btn btn-neutral float-left" title="tts_html_utils.test.test_structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="test_text.html" class="btn btn-neutral float-right" title="tts_html_utils.test.test_text" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026 JPL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

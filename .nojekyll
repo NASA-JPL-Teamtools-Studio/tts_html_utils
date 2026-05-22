@@ -1,0 +1,1 @@
+This file disables Jekyll processing so that directories like _static are served properly.

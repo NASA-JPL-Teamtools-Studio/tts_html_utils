@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Table &#8212; tts-html-utils 0.5.6.dev1+g330bcf456.d20260508 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/bugfix.css?v=aa86f000" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=19e4fd97"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/table';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.5" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">tts-html-utils 0.5.6.dev1+g330bcf456.d20260508 documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../api_reference.html">
+    API Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../api_reference.html">
+    API Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Table</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-tts_html_utils.core.components.table">
+<span id="table"></span><h1>Table<a class="headerlink" href="#module-tts_html_utils.core.components.table" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Cell">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">Cell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">children</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Cell" title="Link to this definition">#</a></dt>
+<dd><p>A single table data cell (&lt;td&gt;).</p>
+<p><strong>Concept:</strong>
+The atomic unit of a table. It holds the actual data (text, numbers, or other HTML).</p>
+<p><strong>Alias:</strong> <cite>TD</cite> (conceptually, though not explicitly aliased in python)</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Header">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">Header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_sorting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Header" title="Link to this definition">#</a></dt>
+<dd><p>The Table Head section (&lt;thead&gt;).</p>
+<p><strong>Concept:</strong>
+A special row group reserved for column titles. Browsers and printers treat this 
+differently than the body (e.g., repeating the header on every page of a printout).</p>
+<p><strong>Note:</strong> While you can use this class manually, <cite>PowerTable</cite> creates this automatically 
+via the <cite>add_header</cite> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column_names</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of strings to be used as column titles.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – CSS classes for the header row.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – Additional CSS classes.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles.</p></li>
+<li><p><strong>add_filters</strong> (<em>bool</em>) – If True, injects <cite>&lt;input&gt;</cite> boxes for column filtering. 
+Used internally by <cite>PowerTable</cite> when filtering is enabled.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Header.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Header.render_content" title="Link to this definition">#</a></dt>
+<dd><p>Internal render hook.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">PowerTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'text-align':</span> <span class="pre">'left'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_styles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_styles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_sorting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable" title="Link to this definition">#</a></dt>
+<dd><p>The “Swiss Army Knife” of tables.</p>
+<p><strong>Concept:</strong>
+Building tables tag-by-tag (<cite>&lt;table&gt;</cite>, <cite>&lt;thead&gt;</cite>, <cite>&lt;tbody&gt;</cite>, <cite>&lt;tr&gt;</cite>, <cite>&lt;td&gt;</cite>…) 
+is tedious. <cite>PowerTable</cite> allows you to pass a list of Python dictionaries or tuples, 
+and it automatically constructs the full HTML structure.</p>
+<p><strong>Advanced Features:</strong>
+It supports “Expandable Rows” (accordion details), sorting, and filtering via 
+pre-packaged JavaScript libraries included in this module.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column_fields</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – A list of keys (e.g. <cite>[‘name’, ‘age’]</cite>) to extract from <cite>row_data</cite> dictionaries.
+If None, it infers them from the keys of the first row.</p></li>
+<li><p><strong>row_data</strong> (<em>List</em><em>[</em><em>dict</em><em>] or </em><em>List</em><em>[</em><em>tuple</em><em>]</em><em>, </em><em>optional</em>) – The actual data to display.
+<strong>Format 1 (Simple):</strong> A list of dicts: <cite>[{‘name’: ‘Bob’}, {‘name’: ‘Alice’}]</cite>.
+<strong>Format 2 (Expandable):</strong> A list of tuples: <cite>[(primary_data_dict, hidden_details_html)]</cite>.
+If the second element of the tuple is not None, a hidden detail row is created 
+that expands when the user clicks the main row.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em> or </em><em>list</em><em>, </em><em>optional</em>) – CSS class for the table. Defaults to <cite>[‘power-table’, ‘alternating’, ‘sticky-header’]</cite>.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em> or </em><em>list</em><em>, </em><em>optional</em>) – Additional CSS classes.</p></li>
+<li><p><strong>id</strong> (<em>str</em><em>, </em><em>optional</em>) – Unique ID. If None, a UUID is generated automatically (required for JS features).</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles. Defaults to <cite>{‘text-align’: ‘left’, ‘border’: ‘2px black solid’}</cite>.</p></li>
+<li><p><strong>row_styles</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em><em>, </em><em>optional</em>) – A list of style dicts, one for each row in <cite>row_data</cite>.</p></li>
+<li><p><strong>cell_classes</strong> (<em>List</em><em>, </em><em>optional</em>) – A list of class strings/lists, one for each row.</p></li>
+<li><p><strong>cell_styles</strong> (<em>List</em><em>, </em><em>optional</em>) – A list of style dicts, one for each row.</p></li>
+<li><p><strong>add_filters</strong> (<em>str</em><em>, </em><em>optional</em>) – Enables search inputs in the header. Options: <cite>‘local’</cite>, <cite>‘django’</cite>, or None.</p></li>
+<li><p><strong>add_sorting</strong> (<em>str</em><em>, </em><em>optional</em>) – Enables column sorting. Options: <cite>‘local’</cite>, <cite>‘django’</cite>, or None.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.add_header">
+<span class="sig-name descname"><span class="pre">add_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.add_header" title="Link to this definition">#</a></dt>
+<dd><p>Adds a Header object to the PowerTable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column_names</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Cell contents for the cells in the thead row.
+If None, defaults to the capitalized keys from <cite>col_fields</cite>.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em>) – Primary CSS class</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em>) – Secondary CSS class</p></li>
+<li><p><strong>style</strong> (<em>dict</em>) – Dictionary of element-level CSS styles</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.add_row">
+<span class="sig-name descname"><span class="pre">add_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_styles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.add_row" title="Link to this definition">#</a></dt>
+<dd><p>Manually appends a Row object to the PowerTable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row</strong> (<a class="reference internal" href="#tts_html_utils.core.components.table.Row" title="tts_html_utils.core.components.table.Row"><em>Row</em></a><em>, </em><em>list</em><em>, or </em><em>dict</em>) – Can be an existing <cite>Row</cite> object, or a list/dict of data to convert into a Row.</p></li>
+<li><p><strong>id</strong> (<em>str</em><em>, </em><em>optional</em>) – HTML id, should be unique among all HTML elements.</p></li>
+<li><p><strong>row_class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – CSS class for just this row.</p></li>
+<li><p><strong>row_extra_class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – Secondary CSS class for just this row.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Dictionary of element-level CSS styles.</p></li>
+<li><p><strong>cell_classes</strong> (<em>List</em><em>, </em><em>optional</em>) – List of classes to be applied to each cell in this row.</p></li>
+<li><p><strong>cell_styles</strong> (<em>List</em><em>, </em><em>optional</em>) – List of CSS styles to be applied to each cell in this row.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.add_superheader">
+<span class="sig-name descname"><span class="pre">add_superheader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collapsible</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_closed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.add_superheader" title="Link to this definition">#</a></dt>
+<dd><p>Adds a SuperHeader (title row) object to the PowerTable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The text to display.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em>) – Primary CSS class</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em>) – Secondary CSS class</p></li>
+<li><p><strong>collapsible</strong> (<em>bool</em>) – Whether clicking the header toggles visibility of the table body.</p></li>
+<li><p><strong>default_closed</strong> (<em>bool</em>) – Initial state if collapsible is True.</p></li>
+<li><p><strong>style</strong> (<em>dict</em>) – Dictionary of element-level CSS styles</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.render" title="Link to this definition">#</a></dt>
+<dd><p>Converts the python objects into rendered HTML.</p>
+<p>This method uses a dedicated Jinja2 template (<cite>table.html</cite>) to ensure 
+headers, superheaders, and sorting/filtering inputs are placed correctly.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.render_content" title="Link to this definition">#</a></dt>
+<dd><p>Internal render hook.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Row">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">Row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">children</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apply_cells</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_styles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Row" title="Link to this definition">#</a></dt>
+<dd><p>A table row (&lt;tr&gt;).</p>
+<p><strong>Concept:</strong>
+A horizontal container that holds <cite>Cell</cite> objects. HTML tables are row-oriented; 
+you cannot define columns directly, only rows of cells.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>children</strong> (<em>List</em><em>, </em><em>optional</em>) – The contents of the row. Can be <cite>Cell</cite> objects, strings, or numbers.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em> or </em><em>list</em><em> of </em><em>str</em><em>, </em><em>optional</em>) – CSS classes for the row.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em> or </em><em>list</em><em> of </em><em>str</em><em>, </em><em>optional</em>) – Additional CSS classes to append.</p></li>
+<li><p><strong>tag</strong> (<em>str</em><em>, </em><em>optional</em>) – The HTML tag. Defaults to ‘tr’. (Rarely needs changing).</p></li>
+<li><p><strong>id</strong> (<em>str</em><em>, </em><em>optional</em>) – HTML id attribute.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles.</p></li>
+<li><p><strong>apply_cells</strong> (<em>bool</em>) – If True, automatically wraps plain strings/numbers in <cite>Cell</cite> objects.
+If False, assumes <cite>children</cite> are already valid HTML components. 
+Defaults to True.</p></li>
+<li><p><strong>cell_styles</strong> (<em>list</em><em>, </em><em>optional</em>) – A list of style dictionaries to apply to the generated cells. 
+Must match the length of <cite>children</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Superheader">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">Superheader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collapsible</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_closed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Superheader" title="Link to this definition">#</a></dt>
+<dd><p>A secondary header row that sits <em>above</em> the main column headers.</p>
+<p><strong>Concept:</strong>
+Often used for a table title or to group multiple columns under a single category.
+This element spans all columns (<cite>colspan=100%</cite>) by default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The text to display in the superheader.</p></li>
+<li><p><strong>collapsible</strong> (<em>bool</em>) – Enables accordion-style collapsing of the table body.</p></li>
+<li><p><strong>default_closed</strong> (<em>bool</em>) – If <cite>collapsible</cite> is True, this sets the initial state to closed.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – CSS classes.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – Additional CSS classes.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Superheader.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Superheader.render_content" title="Link to this definition">#</a></dt>
+<dd><p>Internal render hook.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.Cell"><code class="docutils literal notranslate"><span class="pre">Cell</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.Header"><code class="docutils literal notranslate"><span class="pre">Header</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.Header.render_content"><code class="docutils literal notranslate"><span class="pre">Header.render_content()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.PowerTable"><code class="docutils literal notranslate"><span class="pre">PowerTable</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.PowerTable.add_header"><code class="docutils literal notranslate"><span class="pre">PowerTable.add_header()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.PowerTable.add_row"><code class="docutils literal notranslate"><span class="pre">PowerTable.add_row()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.PowerTable.add_superheader"><code class="docutils literal notranslate"><span class="pre">PowerTable.add_superheader()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.PowerTable.render"><code class="docutils literal notranslate"><span class="pre">PowerTable.render()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.PowerTable.render_content"><code class="docutils literal notranslate"><span class="pre">PowerTable.render_content()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.Row"><code class="docutils literal notranslate"><span class="pre">Row</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.Superheader"><code class="docutils literal notranslate"><span class="pre">Superheader</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.table.Superheader.render_content"><code class="docutils literal notranslate"><span class="pre">Superheader.render_content()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026 JPL.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

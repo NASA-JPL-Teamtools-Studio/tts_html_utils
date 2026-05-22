@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Base &#8212; tts-html-utils 0.5.6.dev1+g330bcf456.d20260508 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/bugfix.css?v=aa86f000" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=19e4fd97"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/base';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.5" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">tts-html-utils 0.5.6.dev1+g330bcf456.d20260508 documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../api_reference.html">
+    API Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../api_reference.html">
+    API Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Base</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-tts_html_utils.core.components.base">
+<span id="base"></span><h1>Base<a class="headerlink" href="#module-tts_html_utils.core.components.base" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.base.</span></span><span class="sig-name descname"><span class="pre">HtmlComponent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">children</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent" title="Link to this definition">#</a></dt>
+<dd><p>The fundamental blueprint for all HTML elements in this library.</p>
+<p><strong>The Concept:</strong>
+HTML is hierarchical (a tree). A <cite>&lt;div&gt;</cite> contains a <cite>&lt;table&gt;</cite>, which contains 
+<cite>&lt;tr&gt;</cite> rows, which contain <cite>&lt;td&gt;</cite> cells. This class provides the machinery 
+to replicate that structure in Python.</p>
+<p><strong>How it works:</strong>
+Every specific HTML tag (like <cite>Div</cite>, <cite>Span</cite>, or <cite>Img</cite>) inherits from this class.
+This base class handles the logic shared by <em>all</em> of them, such as:
+1. <strong>Parent/Child Relationships:</strong> Tracking what is inside what.
+2. <strong>Attribute Management:</strong> Handling IDs, CSS classes, and inline styles.
+3. <strong>Dependency bubbling:</strong> If a button deep inside a table requires a specific</p>
+<blockquote>
+<div><p>JavaScript file, this class allows that requirement to bubble up to the 
+top of the document so the <cite>HtmlCompiler</cite> can see it.</p>
+</div></blockquote>
+<p><strong>Note:</strong> This is an “Abstract Base Class” (ABC). You cannot create a generic <cite>HtmlComponent</cite> 
+directly. You must use one of its subclasses that represents a real HTML tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>children</strong> (<em>List</em><em> of </em><em>HtmlComponent objects</em><em> (or </em><em>plain strings</em><em>)</em><em>, </em><em>optional</em>) – Any nested components that go <em>inside</em> this element.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em> or </em><em>list</em><em> of </em><em>str</em><em>, </em><em>optional</em>) – Primary CSS class(es) to control the look/feel.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em> or </em><em>list</em><em> of </em><em>str</em><em>, </em><em>optional</em>) – Additional CSS classes to append. Useful when extending components 
+where you want to keep the base class but add a modifier.</p></li>
+<li><p><strong>tag</strong> (<em>str</em><em>, </em><em>optional</em>) – The actual HTML tag name (e.g., ‘div’, ‘a’, ‘span’). Defaults to the class’s <cite>TAG</cite> constant.</p></li>
+<li><p><strong>id</strong> (<em>str</em><em>, </em><em>optional</em>) – The unique HTML <cite>id</cite> attribute for this element.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles (e.g., <cite>{‘color’: ‘red’, ‘margin’: ‘10px’}</cite>).</p></li>
+<li><p><strong>attr</strong> (<em>dict</em><em>, </em><em>optional</em>) – A dictionary of any other HTML attributes not covered above (e.g., <cite>{‘href’: ‘…’, ‘onclick’: ‘…’}</cite>).</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.add_child">
+<span class="sig-name descname"><span class="pre">add_child</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">child</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.add_child" title="Link to this definition">#</a></dt>
+<dd><p>Nests a new element inside this one.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>child</strong> (<a class="reference internal" href="#tts_html_utils.core.components.base.HtmlComponent" title="tts_html_utils.core.components.base.HtmlComponent"><em>HtmlComponent</em></a><em> or </em><em>str</em>) – The component to insert.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.add_class">
+<span class="sig-name descname"><span class="pre">add_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.add_class" title="Link to this definition">#</a></dt>
+<dd><p>Appends a new CSS class to the existing list of classes.
+Useful for dynamically highlighting an element (e.g., adding ‘active’ or ‘error’).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>new_class</strong> (<em>str</em>) – The CSS class string to add.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.aggregate_attributes">
+<span class="sig-name descname"><span class="pre">aggregate_attributes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.aggregate_attributes" title="Link to this definition">#</a></dt>
+<dd><p>The “Harvester” method.</p>
+<p>This function recursively dives down into every child (and grandchild) 
+of this component to find specific attributes (usually ‘js_includes’ or 
+‘css_includes’).</p>
+<p><strong>Why?</strong> When you render a full page, the top-level document needs to know about 
+every JavaScript file required by every tiny widget deep in the page structure.
+This method bubbles those requirements up to the surface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>attr</strong> (<em>str</em>) – The name of the attribute to collect (e.g., <cite>‘js_includes’</cite>).</p></li>
+<li><p><strong>lst</strong> (<em>list</em><em>, </em><em>optional</em>) – The accumulator list. If None, a new list is created.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list containing the collected attributes from this component and all descendents.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.class_name">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">class_name</span></span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.class_name" title="Link to this definition">#</a></dt>
+<dd><p>Returns the final, space-separated string of CSS classes.</p>
+<p>This combines the default classes (from <cite>DEFAULT_CLASS</cite>) with any specific 
+classes added during initialization or via <cite>add_class</cite>. This string is 
+what actually gets written to the HTML <cite>class=”…”</cite> attribute.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.content">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">content</span></span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.content" title="Link to this definition">#</a></dt>
+<dd><p>A convenience property that returns the <em>inner</em> HTML of the component.</p>
+<p>Example: If the component is <cite>&lt;div&gt;&lt;b&gt;Hello&lt;/b&gt;&lt;/div&gt;</cite>, <cite>.content</cite> returns <cite>&lt;b&gt;Hello&lt;/b&gt;</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.pretty_print">
+<span class="sig-name descname"><span class="pre">pretty_print</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.pretty_print" title="Link to this definition">#</a></dt>
+<dd><p>A debugging tool that prints the HTML in a readable, indented format.</p>
+<p>Raw HTML strings are often one massive, unreadable line. This uses 
+BeautifulSoup to break it into indented lines so you can see the structure 
+visually.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.recurse_stylesheets">
+<span class="sig-name descname"><span class="pre">recurse_stylesheets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.recurse_stylesheets" title="Link to this definition">#</a></dt>
+<dd><p>Crawls the component tree to find all stylesheets declared by children.</p>
+<p>Similar to <cite>aggregate_attributes</cite>, this ensures that if a nested component 
+defines a custom <cite>STYLESHEET</cite>, that sheet is bubbled up and included in the 
+document head.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.render">
+<span class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.render" title="Link to this definition">#</a></dt>
+<dd><p>This method transforms the abstract Python object into an actual HTML string.
+Since this is the base class, it doesn’t know <em>how</em> to render itself yet. 
+Specific implementations (like <cite>HtmlComponentSimple</cite>) provide the logic here.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.render_content" title="Link to this definition">#</a></dt>
+<dd><p>A hook for how an individual component should render its content as a string.
+Most compoenents inherit from HtmlComponentSimple, which inherits from this. 
+HtmlComponentSimple defines render_content itself, but it can always be
+overridden by a descendent class.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponent.rendered">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">rendered</span></span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponent.rendered" title="Link to this definition">#</a></dt>
+<dd><p>A convenience property that triggers the full rendering process.
+Accessing <cite>.rendered</cite> is equivalent to calling the <cite>.render()</cite> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The fully compiled HTML string for this component.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponentSimple">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.base.</span></span><span class="sig-name descname"><span class="pre">HtmlComponentSimple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">children</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponentSimple" title="Link to this definition">#</a></dt>
+<dd><p>The implementation for standard “Container” HTML tags.</p>
+<p><strong>Concept:</strong>
+Most HTML tags work like containers: they open, they hold content, and they close.
+Examples: <cite>&lt;div&gt;…&lt;/div&gt;</cite>, <cite>&lt;p&gt;…&lt;/p&gt;</cite>, <cite>&lt;b&gt;…&lt;/b&gt;</cite>.</p>
+<p>This class implements the <cite>render</cite> logic for this open-close pattern.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponentSimple.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponentSimple.render" title="Link to this definition">#</a></dt>
+<dd><p>Generates the full HTML string for this element and all its children.</p>
+<p>Structure: <cite>&lt;tag&gt; [All Children Rendered Here] &lt;/tag&gt;</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponentSimple.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponentSimple.render_content" title="Link to this definition">#</a></dt>
+<dd><p>Iterates through the children list, asks them to render themselves, 
+and concatenates the results.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponentSingleSimple">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.base.</span></span><span class="sig-name descname"><span class="pre">HtmlComponentSingleSimple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">children</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponentSingleSimple" title="Link to this definition">#</a></dt>
+<dd><p>The implementation for “Void” or “Self-Closing” HTML tags.</p>
+<p><strong>Concept:</strong>
+Some HTML tags do not contain other elements. They are standalone instructions.
+Examples: 
+- <cite>&lt;img&gt;</cite>: Just places an image.
+- <cite>&lt;br&gt;</cite>: Just creates a line break.
+- <cite>&lt;input&gt;</cite>: Just creates a text box.</p>
+<p>These tags <strong>must not</strong> have a closing tag (e.g., <cite>&lt;/img&gt;</cite> is invalid HTML).
+This class overrides the render method to ensure we only print the opening tag.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponentSingleSimple.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponentSingleSimple.render" title="Link to this definition">#</a></dt>
+<dd><p>Renders the tag without a closing partner or internal content.</p>
+<p>Structure: <cite>&lt;tag attribute=”value”&gt;</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.base.HtmlComponentSingleSimple.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.base.HtmlComponentSingleSimple.render_content" title="Link to this definition">#</a></dt>
+<dd><p>Disabled for HtmlComponentSingleSimple, but still here in case it’s called
+so it raises a useful exception.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent"><code class="docutils literal notranslate"><span class="pre">HtmlComponent</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.add_child"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.add_child()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.add_class"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.add_class()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.aggregate_attributes"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.aggregate_attributes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.class_name"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.class_name</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.content"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.content</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.pretty_print"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.pretty_print()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.recurse_stylesheets"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.recurse_stylesheets()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.render"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.render()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.render_content"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.render_content()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponent.rendered"><code class="docutils literal notranslate"><span class="pre">HtmlComponent.rendered</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponentSimple"><code class="docutils literal notranslate"><span class="pre">HtmlComponentSimple</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponentSimple.render"><code class="docutils literal notranslate"><span class="pre">HtmlComponentSimple.render()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponentSimple.render_content"><code class="docutils literal notranslate"><span class="pre">HtmlComponentSimple.render_content()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponentSingleSimple"><code class="docutils literal notranslate"><span class="pre">HtmlComponentSingleSimple</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponentSingleSimple.render"><code class="docutils literal notranslate"><span class="pre">HtmlComponentSingleSimple.render()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tts_html_utils.core.components.base.HtmlComponentSingleSimple.render_content"><code class="docutils literal notranslate"><span class="pre">HtmlComponentSingleSimple.render_content()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026 JPL.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

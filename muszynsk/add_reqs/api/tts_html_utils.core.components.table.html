@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tts_html_utils.core.components.table &mdash; tts-html-utils 0.5.6.dev3+gcf830dbf4.d20260508 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/bugfix.css?v=460d6fa5" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a89c4345"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tts_html_utils.core.components.text" href="tts_html_utils.core.components.text.html" />
+    <link rel="prev" title="tts_html_utils.core.components.structure" href="tts_html_utils.core.components.structure.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            tts-html-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HTML Elements:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../api_reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.html">tts_html_utils.core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.compiler.html">tts_html_utils.core.compiler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.html">tts_html_utils.core.components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.base.html">tts_html_utils.core.components.base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.favicon.html">tts_html_utils.core.components.favicon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.flexbox.html">tts_html_utils.core.components.flexbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.list.html">tts_html_utils.core.components.list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.misc.html">tts_html_utils.core.components.misc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.navigation.html">tts_html_utils.core.components.navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.plot.html">tts_html_utils.core.components.plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.structure.html">tts_html_utils.core.components.structure</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">tts_html_utils.core.components.table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tts_html_utils.core.components.table.Cell"><code class="docutils literal notranslate"><span class="pre">Cell</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.Cell.TAG"><code class="docutils literal notranslate"><span class="pre">Cell.TAG</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tts_html_utils.core.components.table.Header"><code class="docutils literal notranslate"><span class="pre">Header</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.Header.TAG"><code class="docutils literal notranslate"><span class="pre">Header.TAG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.Header.render_content"><code class="docutils literal notranslate"><span class="pre">Header.render_content()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable"><code class="docutils literal notranslate"><span class="pre">PowerTable</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable.DEFAULT_CLASS"><code class="docutils literal notranslate"><span class="pre">PowerTable.DEFAULT_CLASS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable.STYLESHEETS"><code class="docutils literal notranslate"><span class="pre">PowerTable.STYLESHEETS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable.TAG"><code class="docutils literal notranslate"><span class="pre">PowerTable.TAG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable.add_header"><code class="docutils literal notranslate"><span class="pre">PowerTable.add_header()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable.add_row"><code class="docutils literal notranslate"><span class="pre">PowerTable.add_row()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable.add_superheader"><code class="docutils literal notranslate"><span class="pre">PowerTable.add_superheader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable.render"><code class="docutils literal notranslate"><span class="pre">PowerTable.render()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.PowerTable.render_content"><code class="docutils literal notranslate"><span class="pre">PowerTable.render_content()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tts_html_utils.core.components.table.Row"><code class="docutils literal notranslate"><span class="pre">Row</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.Row.TAG"><code class="docutils literal notranslate"><span class="pre">Row.TAG</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tts_html_utils.core.components.table.Superheader"><code class="docutils literal notranslate"><span class="pre">Superheader</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.Superheader.TAG"><code class="docutils literal notranslate"><span class="pre">Superheader.TAG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tts_html_utils.core.components.table.Superheader.render_content"><code class="docutils literal notranslate"><span class="pre">Superheader.render_content()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.components.text.html">tts_html_utils.core.components.text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.core.palette.html">tts_html_utils.core.palette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.jupyter.html">tts_html_utils.jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.jupyter.grid.html">tts_html_utils.jupyter.grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.resource.html">tts_html_utils.resource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.html">tts_html_utils.test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_base.html">tts_html_utils.test.test_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_compiler.html">tts_html_utils.test.test_compiler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_list.html">tts_html_utils.test.test_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_misc.html">tts_html_utils.test.test_misc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_navigation.html">tts_html_utils.test.test_navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_plot.html">tts_html_utils.test.test_plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_resource.html">tts_html_utils.test.test_resource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_structure.html">tts_html_utils.test.test_structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_table.html">tts_html_utils.test.test_table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tts_html_utils.test.test_text.html">tts_html_utils.test.test_text</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirements.html">Requirements</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">tts-html-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../api_reference.html">API Reference</a></li>
+      <li class="breadcrumb-item active">tts_html_utils.core.components.table</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tts_html_utils.core.components.table">
+<span id="tts-html-utils-core-components-table"></span><h1>tts_html_utils.core.components.table<a class="headerlink" href="#module-tts_html_utils.core.components.table" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Cell">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">Cell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">children</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Cell" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="tts_html_utils.core.components.base.html#tts_html_utils.core.components.base.HtmlComponentSimple" title="tts_html_utils.core.components.base.HtmlComponentSimple"><code class="xref py py-class docutils literal notranslate"><span class="pre">HtmlComponentSimple</span></code></a></p>
+<p>A single table data cell (&lt;td&gt;).</p>
+<p><strong>Concept:</strong>
+The atomic unit of a table. It holds the actual data (text, numbers, or other HTML).</p>
+<p><strong>Alias:</strong> <cite>TD</cite> (conceptually, though not explicitly aliased in python)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Cell.TAG">
+<span class="sig-name descname"><span class="pre">TAG</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'td'</span></span><a class="headerlink" href="#tts_html_utils.core.components.table.Cell.TAG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Header">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">Header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_sorting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Header" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="tts_html_utils.core.components.base.html#tts_html_utils.core.components.base.HtmlComponentSimple" title="tts_html_utils.core.components.base.HtmlComponentSimple"><code class="xref py py-class docutils literal notranslate"><span class="pre">HtmlComponentSimple</span></code></a></p>
+<p>The Table Head section (&lt;thead&gt;).</p>
+<p><strong>Concept:</strong>
+A special row group reserved for column titles. Browsers and printers treat this
+differently than the body (e.g., repeating the header on every page of a printout).</p>
+<p><strong>Note:</strong> While you can use this class manually, <cite>PowerTable</cite> creates this automatically
+via the <cite>add_header</cite> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column_names</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of strings to be used as column titles.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – CSS classes for the header row.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – Additional CSS classes.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles.</p></li>
+<li><p><strong>add_filters</strong> (<em>bool</em>) – If True, injects <cite>&lt;input&gt;</cite> boxes for column filtering.
+Used internally by <cite>PowerTable</cite> when filtering is enabled.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Header.TAG">
+<span class="sig-name descname"><span class="pre">TAG</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'thead'</span></span><a class="headerlink" href="#tts_html_utils.core.components.table.Header.TAG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Header.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Header.render_content" title="Link to this definition"></a></dt>
+<dd><p>Internal render hook.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">PowerTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'text-align':</span> <span class="pre">'left'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_styles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_styles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_sorting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="tts_html_utils.core.components.base.html#tts_html_utils.core.components.base.HtmlComponent" title="tts_html_utils.core.components.base.HtmlComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">HtmlComponent</span></code></a></p>
+<p>The “Swiss Army Knife” of tables.</p>
+<p><strong>Concept:</strong>
+Building tables tag-by-tag (<cite>&lt;table&gt;</cite>, <cite>&lt;thead&gt;</cite>, <cite>&lt;tbody&gt;</cite>, <cite>&lt;tr&gt;</cite>, <cite>&lt;td&gt;</cite>…)
+is tedious. <cite>PowerTable</cite> allows you to pass a list of Python dictionaries or tuples,
+and it automatically constructs the full HTML structure.</p>
+<p><strong>Advanced Features:</strong>
+It supports “Expandable Rows” (accordion details), sorting, and filtering via
+pre-packaged JavaScript libraries included in this module.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column_fields</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – A list of keys (e.g. <cite>[‘name’, ‘age’]</cite>) to extract from <cite>row_data</cite> dictionaries.
+If None, it infers them from the keys of the first row.</p></li>
+<li><p><strong>row_data</strong> (<em>List</em><em>[</em><em>dict</em><em>] or </em><em>List</em><em>[</em><em>tuple</em><em>]</em><em>, </em><em>optional</em>) – The actual data to display.
+<strong>Format 1 (Simple):</strong> A list of dicts: <cite>[{‘name’: ‘Bob’}, {‘name’: ‘Alice’}]</cite>.
+<strong>Format 2 (Expandable):</strong> A list of tuples: <cite>[(primary_data_dict, hidden_details_html)]</cite>.
+If the second element of the tuple is not None, a hidden detail row is created
+that expands when the user clicks the main row.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em> or </em><em>list</em><em>, </em><em>optional</em>) – CSS class for the table. Defaults to <cite>[‘power-table’, ‘alternating’, ‘sticky-header’]</cite>.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em> or </em><em>list</em><em>, </em><em>optional</em>) – Additional CSS classes.</p></li>
+<li><p><strong>id</strong> (<em>str</em><em>, </em><em>optional</em>) – Unique ID. If None, a UUID is generated automatically (required for JS features).</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles. Defaults to <cite>{‘text-align’: ‘left’, ‘border’: ‘2px black solid’}</cite>.</p></li>
+<li><p><strong>row_styles</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em><em>, </em><em>optional</em>) – A list of style dicts, one for each row in <cite>row_data</cite>.</p></li>
+<li><p><strong>cell_classes</strong> (<em>List</em><em>, </em><em>optional</em>) – A list of class strings/lists, one for each row.</p></li>
+<li><p><strong>cell_styles</strong> (<em>List</em><em>, </em><em>optional</em>) – A list of style dicts, one for each row.</p></li>
+<li><p><strong>add_filters</strong> (<em>str</em><em>, </em><em>optional</em>) – Enables search inputs in the header. Options: <cite>‘local’</cite>, <cite>‘django’</cite>, or None.</p></li>
+<li><p><strong>add_sorting</strong> (<em>str</em><em>, </em><em>optional</em>) – Enables column sorting. Options: <cite>‘local’</cite>, <cite>‘django’</cite>, or None.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.DEFAULT_CLASS">
+<span class="sig-name descname"><span class="pre">DEFAULT_CLASS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['power-table',</span> <span class="pre">'alternating',</span> <span class="pre">'sticky-header']</span></span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.DEFAULT_CLASS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.STYLESHEETS">
+<span class="sig-name descname"><span class="pre">STYLESHEETS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[PosixPath('/Users/muszynsk/projects/tt_studio/dev/tts_core/tts_html_utils/src/tts_html_utils/resources/rule_result_table.css'),</span> <span class="pre">PosixPath('/Users/muszynsk/projects/tt_studio/dev/tts_core/tts_html_utils/src/tts_html_utils/resources/report_base.css'),</span> <span class="pre">PosixPath('/Users/muszynsk/projects/tt_studio/dev/tts_core/tts_html_utils/src/tts_html_utils/resources/rule_summary.css')]</span></span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.STYLESHEETS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.TAG">
+<span class="sig-name descname"><span class="pre">TAG</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'table'</span></span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.TAG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.add_header">
+<span class="sig-name descname"><span class="pre">add_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.add_header" title="Link to this definition"></a></dt>
+<dd><p>Adds a Header object to the PowerTable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column_names</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Cell contents for the cells in the thead row.
+If None, defaults to the capitalized keys from <cite>col_fields</cite>.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em>) – Primary CSS class</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em>) – Secondary CSS class</p></li>
+<li><p><strong>style</strong> (<em>dict</em>) – Dictionary of element-level CSS styles</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.add_row">
+<span class="sig-name descname"><span class="pre">add_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_styles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.add_row" title="Link to this definition"></a></dt>
+<dd><p>Manually appends a Row object to the PowerTable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row</strong> (<a class="reference internal" href="#tts_html_utils.core.components.table.Row" title="tts_html_utils.core.components.table.Row"><em>Row</em></a><em>, </em><em>list</em><em>, or </em><em>dict</em>) – Can be an existing <cite>Row</cite> object, or a list/dict of data to convert into a Row.</p></li>
+<li><p><strong>id</strong> (<em>str</em><em>, </em><em>optional</em>) – HTML id, should be unique among all HTML elements.</p></li>
+<li><p><strong>row_class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – CSS class for just this row.</p></li>
+<li><p><strong>row_extra_class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – Secondary CSS class for just this row.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Dictionary of element-level CSS styles.</p></li>
+<li><p><strong>cell_classes</strong> (<em>List</em><em>, </em><em>optional</em>) – List of classes to be applied to each cell in this row.</p></li>
+<li><p><strong>cell_styles</strong> (<em>List</em><em>, </em><em>optional</em>) – List of CSS styles to be applied to each cell in this row.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.add_superheader">
+<span class="sig-name descname"><span class="pre">add_superheader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collapsible</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_closed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.add_superheader" title="Link to this definition"></a></dt>
+<dd><p>Adds a SuperHeader (title row) object to the PowerTable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The text to display.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em>) – Primary CSS class</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em>) – Secondary CSS class</p></li>
+<li><p><strong>collapsible</strong> (<em>bool</em>) – Whether clicking the header toggles visibility of the table body.</p></li>
+<li><p><strong>default_closed</strong> (<em>bool</em>) – Initial state if collapsible is True.</p></li>
+<li><p><strong>style</strong> (<em>dict</em>) – Dictionary of element-level CSS styles</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.render" title="Link to this definition"></a></dt>
+<dd><p>Converts the python objects into rendered HTML.</p>
+<p>This method uses a dedicated Jinja2 template (<cite>table.html</cite>) to ensure
+headers, superheaders, and sorting/filtering inputs are placed correctly.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.PowerTable.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.PowerTable.render_content" title="Link to this definition"></a></dt>
+<dd><p>Internal render hook.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Row">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">Row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">children</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apply_cells</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_styles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Row" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="tts_html_utils.core.components.base.html#tts_html_utils.core.components.base.HtmlComponentSimple" title="tts_html_utils.core.components.base.HtmlComponentSimple"><code class="xref py py-class docutils literal notranslate"><span class="pre">HtmlComponentSimple</span></code></a></p>
+<p>A table row (&lt;tr&gt;).</p>
+<p><strong>Concept:</strong>
+A horizontal container that holds <cite>Cell</cite> objects. HTML tables are row-oriented;
+you cannot define columns directly, only rows of cells.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>children</strong> (<em>List</em><em>, </em><em>optional</em>) – The contents of the row. Can be <cite>Cell</cite> objects, strings, or numbers.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em> or </em><em>list</em><em> of </em><em>str</em><em>, </em><em>optional</em>) – CSS classes for the row.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em> or </em><em>list</em><em> of </em><em>str</em><em>, </em><em>optional</em>) – Additional CSS classes to append.</p></li>
+<li><p><strong>tag</strong> (<em>str</em><em>, </em><em>optional</em>) – The HTML tag. Defaults to ‘tr’. (Rarely needs changing).</p></li>
+<li><p><strong>id</strong> (<em>str</em><em>, </em><em>optional</em>) – HTML id attribute.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles.</p></li>
+<li><p><strong>apply_cells</strong> (<em>bool</em>) – If True, automatically wraps plain strings/numbers in <cite>Cell</cite> objects.
+If False, assumes <cite>children</cite> are already valid HTML components.
+Defaults to True.</p></li>
+<li><p><strong>cell_styles</strong> (<em>list</em><em>, </em><em>optional</em>) – A list of style dictionaries to apply to the generated cells.
+Must match the length of <cite>children</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Row.TAG">
+<span class="sig-name descname"><span class="pre">TAG</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'tr'</span></span><a class="headerlink" href="#tts_html_utils.core.components.table.Row.TAG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Superheader">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">tts_html_utils.core.components.table.</span></span><span class="sig-name descname"><span class="pre">Superheader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collapsible</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_closed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Superheader" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="tts_html_utils.core.components.base.html#tts_html_utils.core.components.base.HtmlComponentSimple" title="tts_html_utils.core.components.base.HtmlComponentSimple"><code class="xref py py-class docutils literal notranslate"><span class="pre">HtmlComponentSimple</span></code></a></p>
+<p>A secondary header row that sits <em>above</em> the main column headers.</p>
+<p><strong>Concept:</strong>
+Often used for a table title or to group multiple columns under a single category.
+This element spans all columns (<cite>colspan=100%</cite>) by default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The text to display in the superheader.</p></li>
+<li><p><strong>collapsible</strong> (<em>bool</em>) – Enables accordion-style collapsing of the table body.</p></li>
+<li><p><strong>default_closed</strong> (<em>bool</em>) – If <cite>collapsible</cite> is True, this sets the initial state to closed.</p></li>
+<li><p><strong>class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – CSS classes.</p></li>
+<li><p><strong>extra_class_name</strong> (<em>str</em><em>, </em><em>optional</em>) – Additional CSS classes.</p></li>
+<li><p><strong>style</strong> (<em>dict</em><em>, </em><em>optional</em>) – Inline CSS styles.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Superheader.TAG">
+<span class="sig-name descname"><span class="pre">TAG</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'thead'</span></span><a class="headerlink" href="#tts_html_utils.core.components.table.Superheader.TAG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tts_html_utils.core.components.table.Superheader.render_content">
+<span class="sig-name descname"><span class="pre">render_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tts_html_utils.core.components.table.Superheader.render_content" title="Link to this definition"></a></dt>
+<dd><p>Internal render hook.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tts_html_utils.core.components.structure.html" class="btn btn-neutral float-left" title="tts_html_utils.core.components.structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tts_html_utils.core.components.text.html" class="btn btn-neutral float-right" title="tts_html_utils.core.components.text" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026 JPL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

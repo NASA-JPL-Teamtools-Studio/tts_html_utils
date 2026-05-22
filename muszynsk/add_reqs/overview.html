@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Utilities &mdash; tts-html-utils 0.5.6.dev3+gcf830dbf4.d20260511 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/bugfix.css?v=d8ea70b8" />
+      <link rel="stylesheet" type="text/css" href="_static/requirements_table.css?v=9dbf44b5" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2d1a57fa"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Requirements" href="requirements.html" />
+    <link rel="prev" title="TTS HTML Utilities" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            tts-html-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">HTML Utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-html-utilities">What is HTML Utilities?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#projects-currently-supported">Projects Currently Supported</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture">Architecture</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tts-dependencies">TTS dependencies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HTML Elements:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tts-html-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">HTML Utilities</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="html-utilities">
+<h1>HTML Utilities<a class="headerlink" href="#html-utilities" title="Link to this heading"></a></h1>
+<p><img alt="Project logo" src="https://raw.githubusercontent.com/NASA-JPL-Teamtools-Studio/teamtools_documentation/refs/heads/main/docs/images/tts_image_artifacts/html_utils.png" /></p>
+<section id="what-is-html-utilities">
+<h2>What is HTML Utilities?<a class="headerlink" href="#what-is-html-utilities" title="Link to this heading"></a></h2>
+<section id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h3>
+<p>HTML Utilities is what it says on the tin. While there are many HTML generating Pythonic libraries, the Teamtools Studio
+team noticed that many do not match the patterns expected by purely Python developers, resulting in many difficult to
+maintain HTML reporting tools all doing generally the same thing.</p>
+<p>This library is intended to be much more Pythonic and provide the ability to create somewhat sophisticated HTML reports
+with little specific web design knowledge. There is also some JavaScript embedded in some entities to enable a light level
+of interactivity needed for this work.</p>
+<p>The core capability of this library is to facilitate the generation of single-page HTML reports of spacecraft data that
+can be emailed or attached to other reporting systems. That being said, there is no reason this library couldn’t be used
+for simple UI applications of the type sometimes built by Teamtools developers on JPL missions.</p>
+<p>This library uses components that look and feel more or less like Plotly Dash, but is not meant to necessarily be as
+sophisticated as that library, and unlike Plotly Dash, it is meant to be used as a standalone HTML report generation tool.</p>
+<p>While it certainly can be–and indeed is–used as a component in web applications, its primary use case is to create
+components to be incorporated into HTML-friendly applications like Confluence, or to just make custom reports as HTML files
+that can be easily shared via email or attaching to other reporting and project management tools like Jira.</p>
+</section>
+<section id="projects-currently-supported">
+<h3>Projects Currently Supported<a class="headerlink" href="#projects-currently-supported" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Europa Clipper</p></li>
+<li><p>Mars 2020/Perseverance</p></li>
+<li><p>Mars Sample Return/Sample Retrieval Lander</p></li>
+<li><p>Mars Science Laboratory/Curiosity</p></li>
+<li><p>Mars Reconnaisance Orbiter</p></li>
+<li><p>NISAR</p></li>
+<li><p>Orbiting Carbon Observatory 2 (OCO-2)</p></li>
+</ul>
+</section>
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Link to this heading"></a></h2>
+<section id="tts-dependencies">
+<h3>TTS dependencies<a class="headerlink" href="#tts-dependencies" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>TTS Utilities</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="TTS HTML Utilities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="requirements.html" class="btn btn-neutral float-right" title="Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026 JPL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

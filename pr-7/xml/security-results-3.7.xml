@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="bandit" tests="261"><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:23</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:33</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:51</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:72</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:85</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:86</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:94</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:95</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:96</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:103</error></testcase><testcase classname="src/tts_html_utils/test/test_base.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_base.py:110</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:15</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:16</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:21</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:22</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:27</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:32</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:36</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:60</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:62</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:63</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:66</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:67</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:86</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:88</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:89</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:97</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:102</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:109</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:113</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:123</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:124</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:125</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:128</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:129</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:145</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:146</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:176</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:177</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:197</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:214</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:215</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:225</error></testcase><testcase classname="src/tts_html_utils/test/test_compiler.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_compiler.py:227</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:7</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:8</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:12</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:13</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:18</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:60</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:69</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:78</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:89</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:100</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:110</error></testcase><testcase classname="src/tts_html_utils/test/test_list.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_list.py:127</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:10</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:14</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:18</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:24</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:25</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:26</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:27</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:33</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:34</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:40</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:42</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:44</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:48</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:49</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:54</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:55</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:60</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:65</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:71</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:75</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:79</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:80</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:93</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:96</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:100</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:101</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:102</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:110</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:111</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:113</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:121</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:122</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:124</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:131</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:132</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:139</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:140</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:141</error></testcase><testcase classname="src/tts_html_utils/test/test_misc.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_misc.py:145</error></testcase><testcase classname="src/tts_html_utils/test/test_navigation.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_navigation.py:11</error></testcase><testcase classname="src/tts_html_utils/test/test_navigation.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_navigation.py:34</error></testcase><testcase classname="src/tts_html_utils/test/test_navigation.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_navigation.py:38</error></testcase><testcase classname="src/tts_html_utils/test/test_navigation.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_navigation.py:44</error></testcase><testcase classname="src/tts_html_utils/test/test_navigation.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_navigation.py:49</error></testcase><testcase classname="src/tts_html_utils/test/test_navigation.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_navigation.py:51</error></testcase><testcase classname="src/tts_html_utils/test/test_navigation.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_navigation.py:59</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:13</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:16</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:23</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:24</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:46</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:47</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:48</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:73</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:74</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:75</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:76</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:98</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:99</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:102</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:139</error></testcase><testcase classname="src/tts_html_utils/test/test_plot.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_plot.py:150</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:19</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:20</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:21</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:28</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:36</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:43</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:50</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:57</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:72</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:88</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:90</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:118</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:119</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:129</error></testcase><testcase classname="src/tts_html_utils/test/test_resource.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_resource.py:130</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:12</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:13</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:14</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:18</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:19</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:20</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:21</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:30</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:34</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:35</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:36</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:37</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:38</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:41</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:42</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:43</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:55</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:56</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:57</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:60</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:61</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:62</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:72</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:80</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:90</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:91</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:94</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:95</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:98</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:99</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:120</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:121</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:122</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:125</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:126</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:127</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:130</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:131</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:155</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:156</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:157</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:160</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:161</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:162</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:165</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:166</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:167</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:170</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:171</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:172</error></testcase><testcase classname="src/tts_html_utils/test/test_structure.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_structure.py:173</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:17</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:23</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:24</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:25</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:32</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:33</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:44</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:45</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:46</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:53</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:54</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:55</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:64</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:65</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:68</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:79</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:83</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:87</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:88</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:106</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:109</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:112</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:113</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:114</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:122</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:123</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:124</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:130</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:131</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:135</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:141</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:142</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:143</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:150</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:154</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:158</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:162</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:170</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:175</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:180</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:183</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:184</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:192</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:193</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:194</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:195</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:203</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:204</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:205</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:213</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:220</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:229</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:231</error></testcase><testcase classname="src/tts_html_utils/test/test_table.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_table.py:237</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:10</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:11</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:12</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:13</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:14</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:15</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:18</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:19</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:20</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:21</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:22</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:23</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:27</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:28</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:29</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:30</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:31</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:48</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:49</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:50</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:53</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:54</error></testcase><testcase classname="src/tts_html_utils/test/test_text.py" name="assert_used"><error message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code." more_info="https://bandit.readthedocs.io/en/1.7.4/plugins/b101_assert_used.html" type="LOW">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src/tts_html_utils/test/test_text.py:62</error></testcase></testsuite>

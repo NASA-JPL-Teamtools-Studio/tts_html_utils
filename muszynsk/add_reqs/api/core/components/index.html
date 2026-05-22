@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tts_html_utils.core.components (Package) &mdash; tts-html-utils 0.5.6.dev3+gcf830dbf4.d20260511 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/bugfix.css?v=d8ea70b8" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/requirements_table.css?v=9dbf44b5" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=2d1a57fa"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="tts_html_utils.core.components.base" href="base.html" />
+    <link rel="prev" title="tts_html_utils.core.compiler" href="../compiler.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            tts-html-utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview.html">HTML Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../requirements.html">Requirements</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HTML Elements:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../api_reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">tts_html_utils API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">tts_html_utils.core (Package)</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../index.html#the-tts-html-utils-core-package">The tts_html_utils <code class="docutils literal notranslate"><span class="pre">core</span></code> package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html#module-tts_html_utils.core">Technical Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../jupyter/index.html">tts_html_utils.jupyter (Package)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resource.html">tts_html_utils.resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../test/index.html">tts_html_utils.test (Package)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">tts-html-utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../api_reference.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">tts_html_utils API</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">tts_html_utils.core (Package)</a></li>
+      <li class="breadcrumb-item active">tts_html_utils.core.components (Package)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tts-html-utils-core-components-package">
+<h1>tts_html_utils.core.components (Package)<a class="headerlink" href="#tts-html-utils-core-components-package" title="Link to this heading"></a></h1>
+<section id="the-tts-html-utils-core-components-package">
+<h2>The tts_html_utils <code class="docutils literal notranslate"><span class="pre">core.components</span></code> package<a class="headerlink" href="#the-tts-html-utils-core-components-package" title="Link to this heading"></a></h2>
+<p>This package is somewhat self explanatory. <code class="docutils literal notranslate"><span class="pre">base.py</span></code> provides an abstract base class that handles all of the logic for combining HTML elements into hierarchical trees and rendering each element into a string that can be understood by a web browser. It also allows developers to contribute snippets of JavaScript or CSS for limited interactive functionality. Developers should take care to use UUIDs liberally when writing new JS functionality so multiple copies of an element on the same page will not trigger each other.</p>
+<p>All other components are extensions of the HtmlComponent abstract base class.</p>
+<p>The rest of the package is fairly self explanatory to developers with modest web development experience. If you don’t understand them immediately that’s OK, but you should probably do some training on a place like W3 Schools or even just asking an LLM what’s going on here.</p>
+</section>
+<section id="module-tts_html_utils.core.components">
+<span id="technical-reference"></span><h2>Technical Reference<a class="headerlink" href="#module-tts_html_utils.core.components" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="base.html">tts_html_utils.core.components.base</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="base.html#tts_html_utils.core.components.base.HtmlComponent"><code class="docutils literal notranslate"><span class="pre">HtmlComponent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="base.html#tts_html_utils.core.components.base.HtmlComponentSimple"><code class="docutils literal notranslate"><span class="pre">HtmlComponentSimple</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="base.html#tts_html_utils.core.components.base.HtmlComponentSingleSimple"><code class="docutils literal notranslate"><span class="pre">HtmlComponentSingleSimple</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="favicon.html">tts_html_utils.core.components.favicon</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="favicon.html#tts_html_utils.core.components.favicon.png_to_base64_string"><code class="docutils literal notranslate"><span class="pre">png_to_base64_string()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flexbox.html">tts_html_utils.core.components.flexbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flexbox.html#tts_html_utils.core.components.flexbox.FlexColumn"><code class="docutils literal notranslate"><span class="pre">FlexColumn</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="flexbox.html#tts_html_utils.core.components.flexbox.FlexContainer"><code class="docutils literal notranslate"><span class="pre">FlexContainer</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="flexbox.html#tts_html_utils.core.components.flexbox.FlexItem"><code class="docutils literal notranslate"><span class="pre">FlexItem</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="flexbox.html#tts_html_utils.core.components.flexbox.FlexRow"><code class="docutils literal notranslate"><span class="pre">FlexRow</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="list.html">tts_html_utils.core.components.list</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="list.html#tts_html_utils.core.components.list.LI"><code class="docutils literal notranslate"><span class="pre">LI</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="list.html#tts_html_utils.core.components.list.ListItem"><code class="docutils literal notranslate"><span class="pre">ListItem</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="list.html#tts_html_utils.core.components.list.OL"><code class="docutils literal notranslate"><span class="pre">OL</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="list.html#tts_html_utils.core.components.list.OrderedList"><code class="docutils literal notranslate"><span class="pre">OrderedList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="list.html#tts_html_utils.core.components.list.PowerList"><code class="docutils literal notranslate"><span class="pre">PowerList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="list.html#tts_html_utils.core.components.list.UL"><code class="docutils literal notranslate"><span class="pre">UL</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="list.html#tts_html_utils.core.components.list.UnorderedList"><code class="docutils literal notranslate"><span class="pre">UnorderedList</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">tts_html_utils.core.components.misc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.A"><code class="docutils literal notranslate"><span class="pre">A</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.BR"><code class="docutils literal notranslate"><span class="pre">BR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Body"><code class="docutils literal notranslate"><span class="pre">Body</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Button"><code class="docutils literal notranslate"><span class="pre">Button</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Div"><code class="docutils literal notranslate"><span class="pre">Div</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Footer"><code class="docutils literal notranslate"><span class="pre">Footer</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.HR"><code class="docutils literal notranslate"><span class="pre">HR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.HTML"><code class="docutils literal notranslate"><span class="pre">HTML</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Head"><code class="docutils literal notranslate"><span class="pre">Head</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Header"><code class="docutils literal notranslate"><span class="pre">Header</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.HorizontalBreak"><code class="docutils literal notranslate"><span class="pre">HorizontalBreak</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.LineBreak"><code class="docutils literal notranslate"><span class="pre">LineBreak</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Link"><code class="docutils literal notranslate"><span class="pre">Link</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Script"><code class="docutils literal notranslate"><span class="pre">Script</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Style"><code class="docutils literal notranslate"><span class="pre">Style</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.Title"><code class="docutils literal notranslate"><span class="pre">Title</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tts_html_utils.core.components.misc.TtsFavicon"><code class="docutils literal notranslate"><span class="pre">TtsFavicon</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="navigation.html">tts_html_utils.core.components.navigation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="navigation.html#tts_html_utils.core.components.navigation.Navbar"><code class="docutils literal notranslate"><span class="pre">Navbar</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plot.html">tts_html_utils.core.components.plot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plot.html#tts_html_utils.core.components.plot.PlotBase"><code class="docutils literal notranslate"><span class="pre">PlotBase</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot.html#tts_html_utils.core.components.plot.ScatterPlot"><code class="docutils literal notranslate"><span class="pre">ScatterPlot</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot.html#tts_html_utils.core.components.plot.TimelinePlot"><code class="docutils literal notranslate"><span class="pre">TimelinePlot</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">tts_html_utils.core.components.structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structure.html#tts_html_utils.core.components.structure.PaneContainer"><code class="docutils literal notranslate"><span class="pre">PaneContainer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="table.html">tts_html_utils.core.components.table</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="table.html#tts_html_utils.core.components.table.Cell"><code class="docutils literal notranslate"><span class="pre">Cell</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="table.html#tts_html_utils.core.components.table.Header"><code class="docutils literal notranslate"><span class="pre">Header</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="table.html#tts_html_utils.core.components.table.PowerTable"><code class="docutils literal notranslate"><span class="pre">PowerTable</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="table.html#tts_html_utils.core.components.table.Row"><code class="docutils literal notranslate"><span class="pre">Row</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="table.html#tts_html_utils.core.components.table.Superheader"><code class="docutils literal notranslate"><span class="pre">Superheader</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="text.html">tts_html_utils.core.components.text</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.H1"><code class="docutils literal notranslate"><span class="pre">H1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.H2"><code class="docutils literal notranslate"><span class="pre">H2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.H3"><code class="docutils literal notranslate"><span class="pre">H3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.H4"><code class="docutils literal notranslate"><span class="pre">H4</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.H5"><code class="docutils literal notranslate"><span class="pre">H5</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.H6"><code class="docutils literal notranslate"><span class="pre">H6</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Heading1"><code class="docutils literal notranslate"><span class="pre">Heading1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Heading2"><code class="docutils literal notranslate"><span class="pre">Heading2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Heading3"><code class="docutils literal notranslate"><span class="pre">Heading3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Heading4"><code class="docutils literal notranslate"><span class="pre">Heading4</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Heading5"><code class="docutils literal notranslate"><span class="pre">Heading5</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Heading6"><code class="docutils literal notranslate"><span class="pre">Heading6</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.P"><code class="docutils literal notranslate"><span class="pre">P</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Paragraph"><code class="docutils literal notranslate"><span class="pre">Paragraph</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Pre"><code class="docutils literal notranslate"><span class="pre">Pre</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Span"><code class="docutils literal notranslate"><span class="pre">Span</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="text.html#tts_html_utils.core.components.text.Strong"><code class="docutils literal notranslate"><span class="pre">Strong</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../compiler.html" class="btn btn-neutral float-left" title="tts_html_utils.core.compiler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="base.html" class="btn btn-neutral float-right" title="tts_html_utils.core.components.base" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026 JPL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
