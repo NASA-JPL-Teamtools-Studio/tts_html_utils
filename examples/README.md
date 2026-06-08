@@ -21,13 +21,6 @@ python nested_pane_containers_demo.py
 
 This will generate an HTML file and print its location. Open this file in a web browser to see the demo.
 
-To run the Jupyter notebook demo:
-
-```bash
-cd /path/to/html_utils/demo
-jupyter notebook nested_pane_containers_demo.ipynb
-```
-
 ## Key Features Demonstrated
 
 1. **Custom IDs**: How to provide custom IDs for pane containers
