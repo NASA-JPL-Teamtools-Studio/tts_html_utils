@@ -118,6 +118,7 @@ class InteractiveGantt(Div):
                                             <div class="gantt-axis-row" id="axis-{{ unique_id }}"></div>
                                             <div id="grid-{{ unique_id }}"></div>
                                             <div id="bars-{{ unique_id }}"></div>
+                                            <div class="gantt-cursor-line" id="cursor-line-{{ unique_id }}"></div>
                                         </div>
                                     </div>
                                 </div>

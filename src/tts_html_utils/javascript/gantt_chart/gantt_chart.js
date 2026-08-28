@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollAreaEl = document.getElementById(`timeline-scroll-${uniqueId}`);
     const cursorTimeEl = document.getElementById(`cursor-time-${uniqueId}`);
     const viewRangeEl = document.getElementById(`view-range-${uniqueId}`);
+    const cursorLineEl = document.getElementById(`cursor-line-${uniqueId}`);
     
     // Calculate zoom limits
     const minZoom = initialInnerWidth / totalTime; // Fit entire timeline
@@ -696,25 +697,43 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { passive: false });
 
     // Live Cursor
+    // Use capture phase to intercept events even when mouse is over activity bars
     scrollAreaEl.addEventListener('mousemove', (e) => {
-        const rect = scrollAreaEl.getBoundingClientRect();
+        const scrollRect = scrollAreaEl.getBoundingClientRect();
+        const canvasRect = canvasEl.getBoundingClientRect();
         const scrollLeft = scrollAreaEl.scrollLeft;
-        const xInsideScroll = e.clientX - rect.left + scrollLeft;
-        
+
+        // Calculate position relative to the canvas content (for time calculation)
+        const xInsideScroll = e.clientX - scrollRect.left + scrollLeft;
+
         const pct = xInsideScroll / (totalTime * pixelsPerMS);
         const time = startDate + (pct * totalTime);
         const date = new Date(time);
-        
+
+        // Update cursor time display
         if (pixelsPerMS > 0.01) {
              cursorTimeEl.innerText = date.toLocaleString(undefined, {hour12:false, timeZone: 'UTC'}) + "." + date.getMilliseconds().toString().padStart(3,'0') + " UTC";
         } else {
              cursorTimeEl.innerText = date.toLocaleString(undefined, {hour12:false, timeZone: 'UTC'}) + " UTC";
         }
-    });
+
+        // Show and position the cursor line
+        // Position relative to the canvas element (accounting for its margin-left: 300px)
+        if (cursorLineEl) {
+            cursorLineEl.style.display = 'block';
+            // Position = cursor x relative to canvas (not scroll area)
+            cursorLineEl.style.left = (e.clientX - canvasRect.left) + 'px';
+        }
+    }, true);  // Use capture phase to intercept events before they reach activity bars
     
     scrollAreaEl.addEventListener('mouseleave', () => {
         cursorTimeEl.innerText = "--";
-    });
+
+        // Hide the cursor line when mouse leaves
+        if (cursorLineEl) {
+            cursorLineEl.style.display = 'none';
+        }
+    }, true);  // Use capture phase for consistency
 
     function refresh() {
         // Use requestAnimationFrame to ensure smooth rendering

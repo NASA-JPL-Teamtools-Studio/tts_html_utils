@@ -328,3 +328,16 @@
     z-index: 9999;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
+
+/* Cursor line that follows the mouse */
+.gantt-cursor-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(100, 116, 139, 0.6); /* Grey color with transparency */
+    pointer-events: none;
+    z-index: 15; /* Above bars but below tooltip */
+    display: none; /* Hidden by default */
+    box-shadow: 0 0 4px rgba(100, 116, 139, 0.3); /* Subtle shadow for visibility */
+}
