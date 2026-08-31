@@ -86,14 +86,13 @@ class TestPaneContainer:
         pc.add_pane("Content B", "Other Tab")
         
         html = pc.render()
-        
         # 1. Verify Container and Navbar
         assert '<div id="pane-container-a" class="pane-container" data-container-id="pane-container-a">' in html
         assert '<ul class="navbar">' in html
         
         # 2. Verify Links
-        assert '<li class="navbartab"><a href="#pane-container-a-my-tab" target="_self">My Tab</a></li>' in html
-        assert '<li class="navbartab"><a href="#pane-container-a-other-tab" target="_self">Other Tab</a></li>' in html
+        assert '<li class="navbartab"><a href="#pane-container-a-my-tab" target="_self" data-nav="pane-container-a-my-tab">My Tab</a></li>' in html
+        assert '<li class="navbartab"><a href="#pane-container-a-other-tab" target="_self" data-nav="pane-container-a-other-tab">Other Tab</a></li>' in html
 
         # 3. Verify Panes
         assert '<div class="visible-pane" data-id="pane-container-a-my-tab" data-pane-name="my-tab" data-container-id="pane-container-a">Content A</div>' in html
@@ -117,16 +116,15 @@ class TestPaneContainer:
         
         # Render the HTML
         html = outer_container.render()
-        
         # 1. Verify outer container structure
         assert '<div id="outer-container" class="pane-container" data-container-id="outer-container">' in html
-        assert '<li class="navbartab"><a href="#outer-container-outer-tab-a" target="_self">Outer Tab A</a></li>' in html
-        assert '<li class="navbartab"><a href="#outer-container-nested-container" target="_self">Nested Container</a></li>' in html
+        assert '<li class="navbartab"><a href="#outer-container-outer-tab-a" target="_self" data-nav="outer-container-outer-tab-a">Outer Tab A</a></li>' in html
+        assert '<li class="navbartab"><a href="#outer-container-nested-container" target="_self" data-nav="outer-container-nested-container">Nested Container</a></li>' in html
         
         # 2. Verify inner container structure
         assert '<div id="inner-container" class="pane-container" data-container-id="inner-container">' in html
-        assert '<li class="navbartab"><a href="#inner-container-inner-tab-a" target="_self">Inner Tab A</a></li>' in html
-        assert '<li class="navbartab"><a href="#inner-container-inner-tab-b" target="_self">Inner Tab B</a></li>' in html
+        assert '<li class="navbartab"><a href="#inner-container-inner-tab-a" target="_self" data-nav="inner-container-inner-tab-a">Inner Tab A</a></li>' in html
+        assert '<li class="navbartab"><a href="#inner-container-inner-tab-b" target="_self" data-nav="inner-container-inner-tab-b">Inner Tab B</a></li>' in html
         
         # 3. Verify inner container panes
         assert '<div class="visible-pane" data-id="inner-container-inner-tab-a" data-pane-name="inner-tab-a" data-container-id="inner-container">Inner Content A</div>' in html
@@ -153,21 +151,20 @@ class TestPaneContainer:
         
         # Render the HTML
         html = outer_container.render()
-        
         # 1. Verify level 1 (outer) container structure
         assert '<div id="level1-container" class="pane-container" data-container-id="level1-container">' in html
-        assert '<li class="navbartab"><a href="#level1-container-l1-tab-a" target="_self">L1 Tab A</a></li>' in html
-        assert '<li class="navbartab"><a href="#level1-container-l1-nested-tab" target="_self">L1 Nested Tab</a></li>' in html
+        assert '<li class="navbartab"><a href="#level1-container-l1-tab-a" target="_self" data-nav="level1-container-l1-tab-a">L1 Tab A</a></li>' in html
+        assert '<li class="navbartab"><a href="#level1-container-l1-nested-tab" target="_self" data-nav="level1-container-l1-nested-tab">L1 Nested Tab</a></li>' in html
         
         # 2. Verify level 2 (middle) container structure
         assert '<div id="level2-container" class="pane-container" data-container-id="level2-container">' in html
-        assert '<li class="navbartab"><a href="#level2-container-l2-tab-a" target="_self">L2 Tab A</a></li>' in html
-        assert '<li class="navbartab"><a href="#level2-container-l2-nested-tab" target="_self">L2 Nested Tab</a></li>' in html
+        assert '<li class="navbartab"><a href="#level2-container-l2-tab-a" target="_self" data-nav="level2-container-l2-tab-a">L2 Tab A</a></li>' in html
+        assert '<li class="navbartab"><a href="#level2-container-l2-nested-tab" target="_self" data-nav="level2-container-l2-nested-tab">L2 Nested Tab</a></li>' in html
         
         # 3. Verify level 3 (inner) container structure
         assert '<div id="level3-container" class="pane-container" data-container-id="level3-container">' in html
-        assert '<li class="navbartab"><a href="#level3-container-l3-tab-a" target="_self">L3 Tab A</a></li>' in html
-        assert '<li class="navbartab"><a href="#level3-container-l3-tab-b" target="_self">L3 Tab B</a></li>' in html
+        assert '<li class="navbartab"><a href="#level3-container-l3-tab-a" target="_self" data-nav="level3-container-l3-tab-a">L3 Tab A</a></li>' in html
+        assert '<li class="navbartab"><a href="#level3-container-l3-tab-b" target="_self" data-nav="level3-container-l3-tab-b">L3 Tab B</a></li>' in html
         
         # 4. Verify content in each level
         assert '<div class="visible-pane" data-id="level1-container-l1-tab-a" data-pane-name="l1-tab-a" data-container-id="level1-container">Level 1 Content</div>' in html

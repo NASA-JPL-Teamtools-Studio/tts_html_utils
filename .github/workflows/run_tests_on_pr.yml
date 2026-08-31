@@ -1,16 +1,16 @@
-name: PR Tests
+name: Run Tests
 
 on:
   pull_request:
     branches: [ main ]
-    types: [opened, synchronize, reopened]
-
-permissions:
-  pull-requests: write
-  contents: read
+  push:
+    branches: [ main ]
 
 jobs:
-  call-shared-tests:
+  call-workflow:
+    permissions:
+      contents: write
+      pull-requests: write
     uses: NASA-JPL-Teamtools-Studio/tts_ci_cd/.github/workflows/run_tests_on_pr.yml@main
     with:
-      package_name: tts_html_utils
+      package_name: 'tts_html_utils'
