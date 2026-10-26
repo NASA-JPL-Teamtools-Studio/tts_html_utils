@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 tbody.appendChild(detailRowMap[row.id]);
             }
         });
+        table.dispatchEvent(new CustomEvent("table:updated", {detail: {type: "sort"}}));
 
     }
 

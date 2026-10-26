@@ -134,6 +134,14 @@ class TestTableComponents:
         pt2 = PowerTable(add_sorting='django')
         assert any('django_html_table_sort.js' in str(p[0]) for p in pt2.js_includes)
 
+    def test_powertable_pagination_injection(self):
+        """Pagination adds its script with the configured default page size."""
+        pt = PowerTable(add_pagination=True)
+        assert pt.pagination is True
+        assert pt.page_size == 25
+        assert any('static_html_table_pagination.js' in str(p[0]) for p in pt.js_includes)
+        assert pt.js_includes[-1][1]['page_size'] == 25
+
     def test_powertable_id_generation(self):
         """Test UUID generation for tables."""
         pt1 = PowerTable()
