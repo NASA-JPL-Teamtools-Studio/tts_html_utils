@@ -206,6 +206,10 @@ class PowerTable(HtmlComponent):
     :type add_filters: str, optional
     :param add_sorting: Enables column sorting. Options: `'local'`, `'django'`, or None.
     :type add_sorting: str, optional
+    :param add_pagination: Enables local pagination controls.
+    :type add_pagination: bool, optional
+    :param page_size: Number of rows shown per page when pagination is enabled.
+    :type page_size: int, optional
     """ 
     TAG = 'table'
     DEFAULT_CLASS = ['power-table', 'alternating', 'sticky-header']
@@ -215,12 +219,16 @@ class PowerTable(HtmlComponent):
     get_stylesheet('rule_summary.css')
     ]
 
-    def __init__(self, column_fields=None, row_data=None, class_name=None, extra_class_name=None, id=None, style={'text-align': 'left'}, row_styles=None, cell_classes=None, cell_styles=None, add_filters=None, add_sorting=None):
+    def __init__(self, column_fields=None, row_data=None, class_name=None, extra_class_name=None, id=None, style={'text-align': 'left'}, row_styles=None, cell_classes=None, cell_styles=None, add_filters=None, add_sorting=None, add_pagination=False, page_size=25):
         #to do, put consider putting style into a sheet
+        if page_size < 1:
+            raise ValueError('page_size must be greater than zero')
         style = {**style, **{'border': '2px black solid'}}
         super().__init__(class_name=class_name, extra_class_name=extra_class_name, id=id, style=style)
         self.col_fields = column_fields
         self.add_sorting = add_sorting
+        self.pagination = bool(add_pagination)
+        self.page_size = page_size
         self.children = []
         self.filter_table = False
         self.id = id if id is not None else f'power-table-{uuid.uuid4()}'
@@ -291,6 +299,10 @@ class PowerTable(HtmlComponent):
             else:
                 raise Exception(f'I don\'t understand how to add {add_sorting} sorting')
             self.js_includes.append((js_path, {'table_id': self.id}))
+
+        if add_pagination:
+            js_path = Path(__file__).parent.parent.parent.joinpath('javascript/filter_table/static_html_table_pagination.js')
+            self.js_includes.append((js_path, {'table_id': self.id, 'page_size': self.page_size}))
 
         self.css_includes = [(s, {}) for s in self.STYLESHEETS]
 

@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
+        table.dispatchEvent(new CustomEvent("table:updated", {detail: {type: "filter"}}));
     }
 
     const debouncedFilter = debounce(filterTable, 200);

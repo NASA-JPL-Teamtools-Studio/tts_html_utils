@@ -17,5 +17,5 @@
     </tbody>
 </table>
 
-<div id="pagination">
+<div id="{% if table.pagination %}{{ table.id }}-pagination{% else %}pagination{% endif %}">
 </div>
