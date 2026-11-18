@@ -46,6 +46,24 @@ function showPaneById(id, containerId) {
       activeLi.classList.add('navbartab-active');
     }
   }
+
+  // Plotly measures hidden graphs at zero width. Resize graphs after their
+  // pane becomes visible so tabbed plots fill the container.
+  resizePlotsInPane(target);
+}
+
+function resizePlotsInPane(pane) {
+  if (!pane || !window.Plotly || !window.Plotly.Plots) return;
+
+  const plots = pane.querySelectorAll('.js-plotly-plot');
+  const resize = () => {
+    plots.forEach(plot => window.Plotly.Plots.resize(plot));
+  };
+
+  // The first pass handles normal tab changes; the second runs after layout
+  // has settled, including when a pane is nested in another pane.
+  requestAnimationFrame(resize);
+  setTimeout(resize, 50);
 }
 
 function updateUrlHash(id) {
