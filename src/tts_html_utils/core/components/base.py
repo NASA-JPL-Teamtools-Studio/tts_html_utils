@@ -69,7 +69,7 @@ class HtmlComponent(ABC):
         self.css_includes = []
         self.attr = attr if attr is not None else {}
 
-        for child in as_list(children or []):
+        for child in as_list(children if children is not None else []):
             self.add_child(child)
 
         self._class = [] + as_list(class_name or self.DEFAULT_CLASS)
